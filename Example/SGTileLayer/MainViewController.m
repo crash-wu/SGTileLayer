@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "TdtMapViewController.h"
+#import "BDMapViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -53,6 +54,9 @@
     
     if(indexPath.row ==0){
         [self.navigationController pushViewController:[[TdtMapViewController alloc]init] animated:true];
+    }else{
+        
+        [self.navigationController pushViewController:[[BDMapViewController alloc] init] animated:true];
     }
 }
 

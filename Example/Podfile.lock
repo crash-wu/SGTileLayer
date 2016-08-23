@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../SGTileLayer.podspec
 
 SPEC CHECKSUMS:
-  SGTileLayer: b8ecdb762fbd77f1078d3613a718b57ef6bb8e42
+  SGTileLayer: 9302060222320fff7f4c3509d2e0dbdc0a04570c
 
 COCOAPODS: 0.39.0

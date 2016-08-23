@@ -23,6 +23,7 @@
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9831DE3C1D6BF2AF0035D8F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE3B1D6BF2AF0035D8F0 /* MainViewController.m */; };
 		9831DE3F1D6BF4EC0035D8F0 /* TdtMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE3E1D6BF4EC0035D8F0 /* TdtMapViewController.m */; };
+		9831DE811D6C30380035D8F0 /* BDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE801D6C30380035D8F0 /* BDMapViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		9831DE3B1D6BF2AF0035D8F0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		9831DE3D1D6BF4EC0035D8F0 /* TdtMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TdtMapViewController.h; sourceTree = "<group>"; };
 		9831DE3E1D6BF4EC0035D8F0 /* TdtMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdtMapViewController.m; sourceTree = "<group>"; };
+		9831DE7F1D6C30380035D8F0 /* BDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDMapViewController.h; sourceTree = "<group>"; };
+		9831DE801D6C30380035D8F0 /* BDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDMapViewController.m; sourceTree = "<group>"; };
 		A2700C65A873579B0E2C1A82 /* SGTileLayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGTileLayer.podspec; path = ../SGTileLayer.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +139,8 @@
 				9831DE3B1D6BF2AF0035D8F0 /* MainViewController.m */,
 				9831DE3D1D6BF4EC0035D8F0 /* TdtMapViewController.h */,
 				9831DE3E1D6BF4EC0035D8F0 /* TdtMapViewController.m */,
+				9831DE7F1D6C30380035D8F0 /* BDMapViewController.h */,
+				9831DE801D6C30380035D8F0 /* BDMapViewController.m */,
 			);
 			name = "Example for SGTileLayer";
 			path = SGTileLayer;
@@ -343,6 +348,7 @@
 				9831DE3C1D6BF2AF0035D8F0 /* MainViewController.m in Sources */,
 				9831DE3F1D6BF4EC0035D8F0 /* TdtMapViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9831DE811D6C30380035D8F0 /* BDMapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,21 +1,19 @@
 //
-//  TdtMapViewController.m
+//  BDMapViewController.m
 //  SGTileLayer
 //
 //  Created by 吴小星 on 16/8/23.
 //  Copyright © 2016年 吴小星. All rights reserved.
 //
 
-#import "TdtMapViewController.h"
+#import "BDMapViewController.h"
 #import <SGTileLayer/SGTileLayerHeader.h>
-#import <SGTileLayer/Southgis_TiledServiceLayer.h>
 
-@interface TdtMapViewController ()
-
+@interface BDMapViewController ()
 
 @end
 
-@implementation TdtMapViewController
+@implementation BDMapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,17 +22,17 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = false;
     
-//    Southgis_TiledServiceLayer *tile = [[Southgis_TiledServiceLayer alloc]initTiledServiceLayerURL:<#(NSString *)#>]
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    [[SGTileLayerUtil sharedInstance] loadBdTileLayer:self.mapView];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [[SGTileLayerUtil sharedInstance] loadTdtTileLayer:WMTS_VECTOR_2000 andMapView:self.mapView];
 }
 
 
