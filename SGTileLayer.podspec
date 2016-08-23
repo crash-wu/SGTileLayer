@@ -30,13 +30,25 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SGTileLayer/Classes/**/*'
+  s.source_files = 'SGTileLayer/Classes/**/*.{h,m}','SGTileLayer/Classes/*.{h,m}'
   
   # s.resource_bundles = {
   #   'SGTileLayer' => ['SGTileLayer/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+ # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+    s.xcconfig = {
+
+    "FRAMEWORK_SEARCH_PATHS" => "$(HOME)/Library/SDKs/ArcGIS/iOS" ,
+    "OTHER_LDFLAGS"  => '-lObjC -framework ArcGIS -l c++',
+
+    'ENABLE_BITCODE' => 'NO',
+    'CLANG_ENABLE_MODULES' => 'YES'
+
+    }
+
+
 end

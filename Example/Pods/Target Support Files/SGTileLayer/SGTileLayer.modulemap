@@ -1,0 +1,6 @@
+framework module SGTileLayer {
+  umbrella header "SGTileLayer-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,13 +6,18 @@
 //  Copyright (c) 2016 吴小星. All rights reserved.
 //
 
-#import "com.southgis.SGTileLayerAppDelegate.h"
+#import "AppDelegate.h"
+#import "MainViewController.h"
 
-@implementation com.southgis.SGTileLayerAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[MainViewController alloc]init]];
+    
     return YES;
 }
 

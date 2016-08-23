@@ -1,0 +1,1 @@
+../../../../../SGTileLayer/Classes/BdTile/Southgis_BdWMTSLayerInfoDelegate.h

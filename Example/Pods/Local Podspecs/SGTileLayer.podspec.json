@@ -1,0 +1,31 @@
+{
+  "name": "SGTileLayer",
+  "version": "0.1.0",
+  "summary": "A short description of SGTileLayer.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/SGTileLayer",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "吴小星": "xiaoxing.wu@southgis.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/SGTileLayer.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": [
+    "SGTileLayer/Classes/**/*.{h,m}",
+    "SGTileLayer/Classes/*.{h,m}"
+  ],
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(HOME)/Library/SDKs/ArcGIS/iOS",
+    "OTHER_LDFLAGS": "-lObjC -framework ArcGIS -l c++",
+    "ENABLE_BITCODE": "NO",
+    "CLANG_ENABLE_MODULES": "YES"
+  }
+}

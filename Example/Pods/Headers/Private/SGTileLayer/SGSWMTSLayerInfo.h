@@ -1,0 +1,1 @@
+../../../../../SGTileLayer/Classes/SGSWMTS/SGSWMTSLayerInfo.h
