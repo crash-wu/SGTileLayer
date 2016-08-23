@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SGTileLayer_Example' do
+  pod 'SGTileLayer', :path => '../'
+
+  target 'SGTileLayer_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
