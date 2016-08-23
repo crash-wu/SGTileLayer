@@ -12,7 +12,7 @@
 #import "SGSWMTSInfo.h"
 #import "SGSWMTSLayer.h"
 #import "SGSWMTSLayerInfo.h"
-#import "SGTileLayerHead.h"
+#import "SGTileLayerHeader.h"
 #import "SGTileLayerUtil.h"
 #import "SouthgisBaseTiledServiceLayer.h"
 #import "SouthgisTiledMapHelper.h"

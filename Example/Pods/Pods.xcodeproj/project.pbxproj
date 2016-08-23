@@ -10,10 +10,23 @@
 	<string>46</string>
 	<key>objects</key>
 	<dict>
-		<key>00ACA708B316657C6369397238D957BF</key>
+		<key>0068CB196C61FB13331593BF265BCB6B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SGSWMTSLayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0197C48A3C89FC14AC453595B4661239</key>
 		<dict>
 			<key>fileRef</key>
-			<string>17EC83C19FA244AC69A30B7C3FB0174D</string>
+			<string>3CA9E294E70A957BAE08A43CDD994153</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -28,7 +41,7 @@
 		<dict>
 			<key>children</key>
 			<array>
-				<string>DAAB8A985B2B397D5200DF3AFE815120</string>
+				<string>D636E95016A2F6FF4B155632AA2A2F3C</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -39,7 +52,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>05A72E24B0AC015B471D1986BB7BEECA</key>
+		<key>03604D2746F0D26A42F4077AFDB35CFE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SouthgisTiledMapHelper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>044EDF007783DA1B209DCD328CF4C05B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -48,14 +74,14 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SGSWMTSLayerInfo.m</string>
+			<string>Southgis_TiledServiceLayerInfoOperation.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>067F89A8365747564EE849805F4F91D7</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C393165E825C49D94A65112D1461D3B6</string>
+			<string>C2F56C6CC93F2C30E641DE826A2BA38C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -70,25 +96,47 @@
 			<key>targetProxy</key>
 			<string>FE957C297F0E835B8DB4B8D6DE6862C1</string>
 		</dict>
-		<key>0D05B3339CD81E1C26C12EE927BA59A9</key>
+		<key>0B8B1DBA3F101BD0A18AF00DC572B4B6</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>2BB3EFCB7A6B8E9D9B8D6770E6074617</string>
-				<string>C393165E825C49D94A65112D1461D3B6</string>
-				<string>512D40D1D66647CBD5CB6F26763D8E44</string>
-				<string>B81ABD3ED87D82099BE7D2FA6B2DA22E</string>
-				<string>4DEB78EFD294DD98958A3D3D45FC2D54</string>
-				<string>53C079B5CA5D2DD7D1CED2A5D83080DC</string>
-			</array>
+			<key>fileRef</key>
+			<string>03604D2746F0D26A42F4077AFDB35CFE</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>BdTile</string>
-			<key>path</key>
-			<string>BdTile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>0F2A181197240DA558BF4881504428C0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4853B237E9BE5C445C67A69A5FA91304</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1052D482F8E9BE49A4DD40CAF129E5FB</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A7AE4F7A2B2799848507C839D5C83C22</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
 		<dict>
@@ -158,6 +206,32 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>11BAF5B7316C77B5D5D1C04E36D4EA87</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SGSWMTSInfo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>13D03E83AF2698585A614751DA22D0BB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSDictionary+YYAdd.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>14AC18F0237BF9279051D78485F7EA04</key>
 		<dict>
 			<key>buildConfigurationList</key>
@@ -166,7 +240,7 @@
 			<array>
 				<string>9A1E5B5BC353951BB7FE2D7FB04F26A1</string>
 				<string>CC40A79ECF13CE537F0D39CB30B9ED43</string>
-				<string>1AC90B28A501129522D3E011370FF268</string>
+				<string>DA4FFE6DE4DF96C48AB585E74B70BAB5</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -210,79 +284,33 @@
 			<key>productType</key>
 			<string>com.apple.product-type.framework</string>
 		</dict>
+		<key>16F3E3A6C3FCE45DC6549CB4AD2B27D4</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2631B0044D4DDC4F438CF04D3C257FB1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>175A86ACCB9A29736FFEA2D149DDB0D4</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B81ABD3ED87D82099BE7D2FA6B2DA22E</string>
+			<string>EDA37E2B40193FD0ABD6FAA121548111</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
 		<key>17CC67FACBDEDDC230B867F420010FDE</key>
 		<dict>
 			<key>fileRef</key>
-			<string>781FAAB590B6C1E76DBB5B774E973D52</string>
+			<string>FC851EA3065562D7F6BC9C66AC527683</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>17EC83C19FA244AC69A30B7C3FB0174D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1AC90B28A501129522D3E011370FF268</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>515CB016ED819D7C7DFA744DAC138FA7</string>
-				<string>DBBAFE833B0F70D1258A5FFEE1200919</string>
-				<string>7224DBBAD5B6CE2D15224875F30ABF7E</string>
-				<string>66FBC9D85F4770818B47809A1A5B240D</string>
-				<string>DCE1930817F163EFD636C4D63B4F97C6</string>
-				<string>46CE068811FB3B612F3F7A84501F5A87</string>
-				<string>9B0B170C573C9251C2650984D52D02CC</string>
-				<string>9EC9B8E50241D05479ABBA98E0A0DD42</string>
-				<string>D1D76FA53FD3ADA5EF2D1E9A3E207AB2</string>
-				<string>00ACA708B316657C6369397238D957BF</string>
-				<string>558F78C4E2950732E73B6874DD50F6D8</string>
-				<string>99AADC1E89928F277A6D50A0D0BD5823</string>
-				<string>FC7B8CDDBCD68F3E4023C1B0E1010E23</string>
-				<string>B348FAFEF81DEE4C30AF081200A97241</string>
-				<string>CFA743AC760C8F08DDC768EDA32A2EED</string>
-				<string>59452C5AD0B25925AF1247F1DBC07FEC</string>
-				<string>C8C152BB4FBB5816D2897A93ED87355F</string>
-				<string>B9F7E98E21CDDECBA2F65E67FC2F3227</string>
-				<string>4F659FF72C888CAF3D221F2DDB17B61C</string>
-				<string>FE2D9B1E7988D0509AADCCF5F93EEB4F</string>
-				<string>A8061D4D4D90FC9DC7F23B15E9B26E60</string>
-				<string>8F3A96C8A96D49836595152B77B02595</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1AEBFF55CE68D44E3EDCE457876AF468</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisTianDiTuWMTSLayerInfoDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>1F4AF9BEF7BEE7F764C482CA0AA08D76</key>
 		<dict>
@@ -291,16 +319,16 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>24A4FF8AA510D37A71F8B05E9F3ABBC8</key>
+		<key>1FB5A4B3DA23D01E4054518FA0DE0416</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SouthgisBaseTiledServiceLayer.m</string>
+			<string>Southigs_TiledServiceLayerOperation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -360,6 +388,19 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
+		<key>2631B0044D4DDC4F438CF04D3C257FB1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SouthgisTdt_TileLayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>26418B58531B60CEDB49AC91A55FBC51</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -386,20 +427,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>2A690992307D80DB83548333EECD5227</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGTileLayer-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2BB3EFCB7A6B8E9D9B8D6770E6074617</key>
+		<key>26F85EC2CD513D4C0C0FA9F8CDF32DF8</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -412,7 +440,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>2CB5FB12F0E3527CE0CEF4932F413A2C</key>
+		<key>2A690992307D80DB83548333EECD5227</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -421,7 +449,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SGTileLayerHead.h</string>
+			<string>SGTileLayer-prefix.pch</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -439,38 +467,12 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>32835A594AE7546B6B6BE99564562776</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>3470B5ACB160EEA1CAC7AB51E0421682</key>
 		<dict>
 			<key>fileRef</key>
-			<string>47164146CC2F7DE2EC42CDBD44036378</string>
+			<string>535C2D0ED2186DB66A3337ABAE1113FA</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>368EB1C0052049F2BAF9866F824C6241</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTdt_LayerInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>36CD997ADED8073E1F67658E0F942792</key>
 		<dict>
@@ -486,9 +488,23 @@
 		<key>36F403893B0727149F81D4BFE232AF38</key>
 		<dict>
 			<key>fileRef</key>
-			<string>5AA73E43E8664A60495C56EBD43C425C</string>
+			<string>4536CCA57EEFCB182E2ED33D80E56B0B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>37648A4E5EB1CDF3D043A94D18E954FE</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9A81D97AB756A4384CB8E6B1425D03F1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>396CE6F701AB851664CEC0B4245A0811</key>
 		<dict>
@@ -555,20 +571,20 @@
 		<key>3AE58A6EB0F28E57178C43C95C28AA23</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C589AA36C35D241C871BA0D2BFB9E58A</string>
+			<string>618E77CF3B1450B4D4A3E574661563B1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>3C47435ABB0C2E86BEBCED01B586689A</key>
+		<key>3CA9E294E70A957BAE08A43CDD994153</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SGTileLayerUtil.m</string>
+			<string>Southgis_TiledServiceLayerInfoOperation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -599,7 +615,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>4692BB03B081A54EC46A5C5DFF5B73A8</key>
+		<key>4536CCA57EEFCB182E2ED33D80E56B0B</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -608,25 +624,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Southgis_WMTSLayerOperation.m</string>
+			<string>Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>46CE068811FB3B612F3F7A84501F5A87</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2CB5FB12F0E3527CE0CEF4932F413A2C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>47164146CC2F7DE2EC42CDBD44036378</key>
+		<key>46819643E359706DA8EAD9F023DF721C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -635,7 +637,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Southgis_TiledServiceLayer.m</string>
+			<string>SGSWMTSInfo.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>46EDEF6A929CE2752516F77B8CA294F1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Southgis_WMTSLayerOperation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -721,7 +736,7 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
-		<key>4ABAEEE8039800474DEF3BF7D0821634</key>
+		<key>494236FA985675D55A51703AD96BD6CF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -747,66 +762,12 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4DEB78EFD294DD98958A3D3D45FC2D54</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisBdWMTSLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>4F261D505CFC223C8CEC9EC899E19EC1</key>
 		<dict>
 			<key>fileRef</key>
-			<string>B415DBBCF82344DAEB3A81CC3EE2C387</string>
+			<string>B8FE0A07E06F32372ADC65FEF01402CE</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>4F659FF72C888CAF3D221F2DDB17B61C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>561FCF8D331B553E23B766948EA37339</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>512D40D1D66647CBD5CB6F26763D8E44</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_BdWMTSLayerOperation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>515CB016ED819D7C7DFA744DAC138FA7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>671088E7B443025F2D01F78CDEE6A4D5</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>52D27E47264431D94520E10C52212979</key>
 		<dict>
@@ -815,14 +776,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>537BFFDD986C3050647A9FF9AEC1285D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>24A4FF8AA510D37A71F8B05E9F3ABBC8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>53C079B5CA5D2DD7D1CED2A5D83080DC</key>
+		<key>535C2D0ED2186DB66A3337ABAE1113FA</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -831,9 +785,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SouthgisBdWMTSLayer.m</string>
+			<string>Southgis_TiledServiceLayer.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>537BFFDD986C3050647A9FF9AEC1285D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9D43C36207CF017A7EEADD118079A467</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>552D02D5BA751AC2E8790D2811D496CA</key>
 		<dict>
@@ -908,21 +869,7 @@
 			<key>name</key>
 			<string>Debug</string>
 		</dict>
-		<key>558F78C4E2950732E73B6874DD50F6D8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>ABFD103E5E43ED8907FD77F605ABBB44</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>561FCF8D331B553E23B766948EA37339</key>
+		<key>5D030EBAF76B0AEECF06CB7A2EB405C0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -931,25 +878,11 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SouthgisTdtType.h</string>
+			<string>Southgis_BdWMTSLayerOperation.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>59452C5AD0B25925AF1247F1DBC07FEC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4DEB78EFD294DD98958A3D3D45FC2D54</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>5AA73E43E8664A60495C56EBD43C425C</key>
+		<key>618E77CF3B1450B4D4A3E574661563B1</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -958,21 +891,21 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m</string>
+			<string>Southigs_TiledServiceLayerOperation.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>63C7CE0B76DFB3BC24F4FBFB290D396E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>C1A85EF2DC3458DD917CB5A58F324487</string>
+			<string>C58E55AC83D8AD6472FF31388DC104CD</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>66FBC9D85F4770818B47809A1A5B240D</key>
+		<key>656D370B3AB0FF3648B16EB527257C09</key>
 		<dict>
 			<key>fileRef</key>
-			<string>93F10741112F3E54494FC89558723943</string>
+			<string>1FB5A4B3DA23D01E4054518FA0DE0416</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -983,62 +916,66 @@
 				</array>
 			</dict>
 		</dict>
-		<key>671088E7B443025F2D01F78CDEE6A4D5</key>
+		<key>67CD5BCD31F1BC517F96FA8C4431F8DF</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>NSDictionary+YYAdd.h</string>
+			<string>SouthgisBdWMTSLayer.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>679D026B22A12944F6A307335269E5FA</key>
+		<key>694A237E17643C5E9E93D4F81E690F0F</key>
 		<dict>
-			<key>children</key>
-			<array>
-				<string>17EC83C19FA244AC69A30B7C3FB0174D</string>
-				<string>47164146CC2F7DE2EC42CDBD44036378</string>
-				<string>ABFD103E5E43ED8907FD77F605ABBB44</string>
-				<string>781FAAB590B6C1E76DBB5B774E973D52</string>
-				<string>F9B667B0217B002D832AD1C77DA87245</string>
-				<string>32835A594AE7546B6B6BE99564562776</string>
-				<string>6BFB6AF0FFA26D1D4A3FBC7225315562</string>
-				<string>5AA73E43E8664A60495C56EBD43C425C</string>
-				<string>E7BB5777C162491FC4D35DB3C51947D3</string>
-				<string>C589AA36C35D241C871BA0D2BFB9E58A</string>
-			</array>
+			<key>fileRef</key>
+			<string>B166BA1A01C7911468FBE8332B0D3DA1</string>
 			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CustomTile</string>
-			<key>path</key>
-			<string>CustomTile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>6BFB6AF0FFA26D1D4A3FBC7225315562</key>
+		<key>6A825774FB2F8CB4E1F09DD53117DC62</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>494236FA985675D55A51703AD96BD6CF</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>6C0C1AD5FE6E9ECFB73E15069A938B62</key>
 		<dict>
 			<key>fileRef</key>
-			<string>1AEBFF55CE68D44E3EDCE457876AF468</string>
+			<string>FEBC9B3A40E61C95E3A6F1195C290869</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+		</dict>
+		<key>6EE8234770A27246CBB63DC6EE6D562E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SGSWMTSLayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>6F96B0E8853850773C14E5A5827F565B</key>
 		<dict>
@@ -1052,20 +989,6 @@
 			<string>Development Pods</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7224DBBAD5B6CE2D15224875F30ABF7E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FFCDEDF615CD4BA7A137E180491C322A</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>730F5C6153DF4D571A508F62169B4947</key>
 		<dict>
@@ -1083,53 +1006,25 @@
 		<key>736AE73DABC38FDDDE221BEB651C37EC</key>
 		<dict>
 			<key>fileRef</key>
-			<string>53C079B5CA5D2DD7D1CED2A5D83080DC</string>
+			<string>67CD5BCD31F1BC517F96FA8C4431F8DF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>781FAAB590B6C1E76DBB5B774E973D52</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A291EEE6569B1952EDC4944135A6D79</key>
+		<key>747A6BDBD24ED8057F07C4CE16D5D6B5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>3C47435ABB0C2E86BEBCED01B586689A</string>
+			<string>11BAF5B7316C77B5D5D1C04E36D4EA87</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>7AEB8AA8DA4B1BE8FF5D8685A7DE5F54</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>671088E7B443025F2D01F78CDEE6A4D5</string>
-				<string>FD7C7C14AC28A3EE8810EE755D762C97</string>
-				<string>7C6289158567B15AFA7C7D9FBDC4855B</string>
-				<string>EA37FF5EC1EA4748B40ACC2FCE34A405</string>
-				<string>FFCDEDF615CD4BA7A137E180491C322A</string>
-				<string>947740118F7CAE391B83F1DF7D64E213</string>
-				<string>93F10741112F3E54494FC89558723943</string>
-				<string>05A72E24B0AC015B471D1986BB7BEECA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SGSWMTS</string>
-			<key>path</key>
-			<string>SGSWMTS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7C6289158567B15AFA7C7D9FBDC4855B</key>
+		<key>7686518BA185A794E9CD9AE915C53A8D</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1138,9 +1033,42 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SGSWMTSInfo.h</string>
+			<string>SouthgisTdt_LayerInfo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76AFD54124C9F6F575C4763A59DCAB53</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SouthgisBaseTiledServiceLayer.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>76E9FD3035D1C452204475B9BA1278FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SouthgisTdtType.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7A291EEE6569B1952EDC4944135A6D79</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D497FB524BE77F60764CFBAF2DD86790</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>7DB346D0F39D3F0E887471402A8071AB</key>
 		<dict>
@@ -1157,10 +1085,62 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>7E9FE33AEE6DFBE3832C1610A301DFEF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SouthgisTianDiTuWMTSLayerInfoDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7F1008401562B9BB760A6851AF776413</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SouthgisTdtType.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7FB87E3EB4BE9B84AA660B88C10722B6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SGTileLayerHeader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8306DDC90AD5E6624512B055F5CA8405</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSDictionary+YYAdd.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>835203D3EC8B118D20693D503E30E49F</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FD7C7C14AC28A3EE8810EE755D762C97</string>
+			<string>8306DDC90AD5E6624512B055F5CA8405</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1263,6 +1243,20 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>8BB24E2D6EB1CE083FBCE5D3A698A5E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7FB87E3EB4BE9B84AA660B88C10722B6</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>8DF64D080F31C6A3C4DD2C9285F7FEE3</key>
 		<dict>
 			<key>children</key>
@@ -1276,20 +1270,6 @@
 			<string>Products</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8F3A96C8A96D49836595152B77B02595</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E7BB5777C162491FC4D35DB3C51947D3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
 		</dict>
 		<key>91C446411508CA806F3FB4FA6B4882EF</key>
 		<dict>
@@ -1307,7 +1287,21 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>939F9CD5AE8DAF58AB2123B4879CF6C0</key>
+		<key>957B2113B24264EEDCE44F73389A599E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>26F85EC2CD513D4C0C0FA9F8CDF32DF8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>95E48D0A34F5B8001AC7501BDB5FA6B0</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1316,33 +1310,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SouthgisTdt_TileLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93F10741112F3E54494FC89558723943</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGSWMTSLayerInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>947740118F7CAE391B83F1DF7D64E213</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SGSWMTSLayer.m</string>
+			<string>Southgis_TiledServiceLayerInfo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1361,10 +1329,10 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>99AADC1E89928F277A6D50A0D0BD5823</key>
+		<key>98BA8B9D2781B09A1CAEB9906E82BD0A</key>
 		<dict>
 			<key>fileRef</key>
-			<string>6BFB6AF0FFA26D1D4A3FBC7225315562</string>
+			<string>7E9FE33AEE6DFBE3832C1610A301DFEF</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1408,19 +1376,31 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>9B0B170C573C9251C2650984D52D02CC</key>
+		<key>9A81D97AB756A4384CB8E6B1425D03F1</key>
 		<dict>
-			<key>fileRef</key>
-			<string>4ABAEEE8039800474DEF3BF7D0821634</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9D43C36207CF017A7EEADD118079A467</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SouthgisBaseTiledServiceLayer.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>9EC6F34F6AE374C43B3631A25FF4A695</key>
 		<dict>
@@ -1437,19 +1417,42 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
-		<key>9EC9B8E50241D05479ABBA98E0A0DD42</key>
+		<key>A1A45BE47BC70706AD10C155E0D74F37</key>
 		<dict>
-			<key>fileRef</key>
-			<string>2BB3EFCB7A6B8E9D9B8D6770E6074617</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SouthgisTiledMapHelper.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A4BDC700348020DE4671BAACBABB8FD7</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>46EDEF6A929CE2752516F77B8CA294F1</string>
+				<string>AF561FD0D21E701D02DB601A56C39158</string>
+				<string>7686518BA185A794E9CD9AE915C53A8D</string>
+				<string>B8FE0A07E06F32372ADC65FEF01402CE</string>
+				<string>2631B0044D4DDC4F438CF04D3C257FB1</string>
+				<string>C58E55AC83D8AD6472FF31388DC104CD</string>
+				<string>7F1008401562B9BB760A6851AF776413</string>
+				<string>76E9FD3035D1C452204475B9BA1278FA</string>
+				<string>7E9FE33AEE6DFBE3832C1610A301DFEF</string>
+				<string>FEBC9B3A40E61C95E3A6F1195C290869</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>TdtTile</string>
+			<key>path</key>
+			<string>TdtTile</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A507915CE1B0B62861E7A19BB0BB4A7E</key>
 		<dict>
@@ -1464,7 +1467,7 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>A6E1F33E5E70901D51168C3CD87C4B83</key>
+		<key>A7AE4F7A2B2799848507C839D5C83C22</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1473,61 +1476,41 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>SouthgisBaseTiledServiceLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A8061D4D4D90FC9DC7F23B15E9B26E60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DD13461C503AEC8BCD47C797E6258C98</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A9A1F700A370102E4C86C682C6251E64</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTianDiTuWMTSLayerInfoDelegate.h</string>
+			<string>SouthgisBdWMTSLayer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>A9CC1690806F70F71B4E71C5630D8BEB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>4692BB03B081A54EC46A5C5DFF5B73A8</string>
+			<string>AF561FD0D21E701D02DB601A56C39158</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>ABFD103E5E43ED8907FD77F605ABBB44</key>
+		<key>A9F7FDF3CA6FEA6CCA309B89FAECC307</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>26F85EC2CD513D4C0C0FA9F8CDF32DF8</string>
+				<string>C2F56C6CC93F2C30E641DE826A2BA38C</string>
+				<string>5D030EBAF76B0AEECF06CB7A2EB405C0</string>
+				<string>EDA37E2B40193FD0ABD6FAA121548111</string>
+				<string>A7AE4F7A2B2799848507C839D5C83C22</string>
+				<string>67CD5BCD31F1BC517F96FA8C4431F8DF</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>BdTile</string>
 			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfo.h</string>
+			<string>BdTile</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>B348FAFEF81DEE4C30AF081200A97241</key>
+		<key>AE77430DDAA3E0B2A35B151A9CBDF634</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FE5EFD52F98C1F2112DB155B2327EF54</string>
+			<string>7F1008401562B9BB760A6851AF776413</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1538,7 +1521,7 @@
 				</array>
 			</dict>
 		</dict>
-		<key>B415DBBCF82344DAEB3A81CC3EE2C387</key>
+		<key>AF561FD0D21E701D02DB601A56C39158</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1547,7 +1530,20 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SouthgisTdt_LayerInfo.m</string>
+			<string>Southgis_WMTSLayerOperation.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B166BA1A01C7911468FBE8332B0D3DA1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>SGSWMTSLayerInfo.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1563,6 +1559,34 @@
 			<string>Pods-SGTileLayer_Example-acknowledgements.plist</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B524F878560F7AEA734A52A542EB7707</key>
+		<dict>
+			<key>fileRef</key>
+			<string>7686518BA185A794E9CD9AE915C53A8D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>B58BC9754087EA44F75ADCEFEF36834C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>13D03E83AF2698585A614751DA22D0BB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
 		<key>B5AD1F417C7E8935AEDAD24D8C4D584C</key>
 		<dict>
@@ -1593,27 +1617,14 @@
 		<key>B7E6C0163736D58F6E019545668CE398</key>
 		<dict>
 			<key>fileRef</key>
-			<string>05A72E24B0AC015B471D1986BB7BEECA</string>
+			<string>CC44E64013A532F3B84F4D50CDFD946D</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>B81ABD3ED87D82099BE7D2FA6B2DA22E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_BdWMTSLayerOperation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B9F7E98E21CDDECBA2F65E67FC2F3227</key>
+		<key>B82A03EB3E12939B35ECBC91653B38C0</key>
 		<dict>
 			<key>fileRef</key>
-			<string>939F9CD5AE8DAF58AB2123B4879CF6C0</string>
+			<string>46EDEF6A929CE2752516F77B8CA294F1</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1623,6 +1634,19 @@
 					<string>Public</string>
 				</array>
 			</dict>
+		</dict>
+		<key>B8FE0A07E06F32372ADC65FEF01402CE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SouthgisTdt_LayerInfo.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
 		<dict>
@@ -1640,30 +1664,6 @@
 			<string>SOURCE_ROOT</string>
 			<key>xcLanguageSpecificationIdentifier</key>
 			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BAB11B810910CAC94F7A3D86D9472CC9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>FE5EFD52F98C1F2112DB155B2327EF54</string>
-				<string>4692BB03B081A54EC46A5C5DFF5B73A8</string>
-				<string>368EB1C0052049F2BAF9866F824C6241</string>
-				<string>B415DBBCF82344DAEB3A81CC3EE2C387</string>
-				<string>939F9CD5AE8DAF58AB2123B4879CF6C0</string>
-				<string>C1A85EF2DC3458DD917CB5A58F324487</string>
-				<string>561FCF8D331B553E23B766948EA37339</string>
-				<string>FC548DE520DA31264EF7A0CEEF00BAE4</string>
-				<string>A9A1F700A370102E4C86C682C6251E64</string>
-				<string>1AEBFF55CE68D44E3EDCE457876AF468</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TdtTile</string>
-			<key>path</key>
-			<string>TdtTile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
 		<dict>
@@ -1737,20 +1737,29 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C1A85EF2DC3458DD917CB5A58F324487</key>
+		<key>C1200E3D7F285705AFBAAA64E0F7E132</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>children</key>
+			<array>
+				<string>13D03E83AF2698585A614751DA22D0BB</string>
+				<string>8306DDC90AD5E6624512B055F5CA8405</string>
+				<string>11BAF5B7316C77B5D5D1C04E36D4EA87</string>
+				<string>46819643E359706DA8EAD9F023DF721C</string>
+				<string>6EE8234770A27246CBB63DC6EE6D562E</string>
+				<string>0068CB196C61FB13331593BF265BCB6B</string>
+				<string>B166BA1A01C7911468FBE8332B0D3DA1</string>
+				<string>CC44E64013A532F3B84F4D50CDFD946D</string>
+			</array>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>SGSWMTS</string>
 			<key>path</key>
-			<string>SouthgisTdt_TileLayer.m</string>
+			<string>SGSWMTS</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C393165E825C49D94A65112D1461D3B6</key>
+		<key>C2F56C6CC93F2C30E641DE826A2BA38C</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1766,7 +1775,7 @@
 		<key>C3B4E396F212DEB720A940F731594EBB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>947740118F7CAE391B83F1DF7D64E213</string>
+			<string>0068CB196C61FB13331593BF265BCB6B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1796,7 +1805,7 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C589AA36C35D241C871BA0D2BFB9E58A</key>
+		<key>C58E55AC83D8AD6472FF31388DC104CD</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -1805,14 +1814,28 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>Southigs_TiledServiceLayerOperation.m</string>
+			<string>SouthgisTdt_TileLayer.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>C8C152BB4FBB5816D2897A93ED87355F</key>
+		<key>C5E90D522CE19C2D26FA4F00561747FB</key>
 		<dict>
 			<key>fileRef</key>
-			<string>368EB1C0052049F2BAF9866F824C6241</string>
+			<string>95E48D0A34F5B8001AC7501BDB5FA6B0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>C7A8C56A80828438349119DE77F6A38B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>76AFD54124C9F6F575C4763A59DCAB53</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1849,24 +1872,23 @@
 			<key>runOnlyForDeploymentPostprocessing</key>
 			<string>0</string>
 		</dict>
-		<key>CFA743AC760C8F08DDC768EDA32A2EED</key>
+		<key>CC44E64013A532F3B84F4D50CDFD946D</key>
 		<dict>
-			<key>fileRef</key>
-			<string>A6E1F33E5E70901D51168C3CD87C4B83</string>
+			<key>includeInIndex</key>
+			<string>1</string>
 			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SGSWMTSLayerInfo.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
-		<key>D1D76FA53FD3ADA5EF2D1E9A3E207AB2</key>
+		<key>CDD2D8E6B231B556B7225886D03D699D</key>
 		<dict>
 			<key>fileRef</key>
-			<string>512D40D1D66647CBD5CB6F26763D8E44</string>
+			<string>6EE8234770A27246CBB63DC6EE6D562E</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 			<key>settings</key>
@@ -1880,7 +1902,7 @@
 		<key>D290BB159E2347763C4411D2CA6343E8</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EE5CB5E9FE03B620ED0319F91A2346CE</string>
+			<string>A1A45BE47BC70706AD10C155E0D74F37</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
@@ -1923,6 +1945,58 @@
 				<string>14AC18F0237BF9279051D78485F7EA04</string>
 			</array>
 		</dict>
+		<key>D497FB524BE77F60764CFBAF2DD86790</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>SGTileLayerUtil.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D636E95016A2F6FF4B155632AA2A2F3C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7FB87E3EB4BE9B84AA660B88C10722B6</string>
+				<string>494236FA985675D55A51703AD96BD6CF</string>
+				<string>D497FB524BE77F60764CFBAF2DD86790</string>
+				<string>76AFD54124C9F6F575C4763A59DCAB53</string>
+				<string>9D43C36207CF017A7EEADD118079A467</string>
+				<string>03604D2746F0D26A42F4077AFDB35CFE</string>
+				<string>A1A45BE47BC70706AD10C155E0D74F37</string>
+				<string>A9F7FDF3CA6FEA6CCA309B89FAECC307</string>
+				<string>DD48C9DC209136BA0A0B840A81E0E644</string>
+				<string>C1200E3D7F285705AFBAAA64E0F7E132</string>
+				<string>A4BDC700348020DE4671BAACBABB8FD7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D6FDFE0F0F0DC3670C7E7547F87B37B6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E580FC997DC0D6414DB9785A5A9B51EB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
 		<key>D87E977637523EA6D69FC20AB9593482</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -1937,69 +2011,61 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>DAAB8A985B2B397D5200DF3AFE815120</key>
+		<key>DA4FFE6DE4DF96C48AB585E74B70BAB5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>B58BC9754087EA44F75ADCEFEF36834C</string>
+				<string>747A6BDBD24ED8057F07C4CE16D5D6B5</string>
+				<string>CDD2D8E6B231B556B7225886D03D699D</string>
+				<string>694A237E17643C5E9E93D4F81E690F0F</string>
+				<string>0F2A181197240DA558BF4881504428C0</string>
+				<string>8BB24E2D6EB1CE083FBCE5D3A698A5E9</string>
+				<string>6A825774FB2F8CB4E1F09DD53117DC62</string>
+				<string>957B2113B24264EEDCE44F73389A599E</string>
+				<string>E443942D06BD3EC362C96CF62ECC0A04</string>
+				<string>D6FDFE0F0F0DC3670C7E7547F87B37B6</string>
+				<string>C5E90D522CE19C2D26FA4F00561747FB</string>
+				<string>37648A4E5EB1CDF3D043A94D18E954FE</string>
+				<string>0197C48A3C89FC14AC453595B4661239</string>
+				<string>B82A03EB3E12939B35ECBC91653B38C0</string>
+				<string>C7A8C56A80828438349119DE77F6A38B</string>
+				<string>1052D482F8E9BE49A4DD40CAF129E5FB</string>
+				<string>B524F878560F7AEA734A52A542EB7707</string>
+				<string>16F3E3A6C3FCE45DC6549CB4AD2B27D4</string>
+				<string>AE77430DDAA3E0B2A35B151A9CBDF634</string>
+				<string>98BA8B9D2781B09A1CAEB9906E82BD0A</string>
+				<string>0B8B1DBA3F101BD0A18AF00DC572B4B6</string>
+				<string>656D370B3AB0FF3648B16EB527257C09</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>DD48C9DC209136BA0A0B840A81E0E644</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>2CB5FB12F0E3527CE0CEF4932F413A2C</string>
-				<string>4ABAEEE8039800474DEF3BF7D0821634</string>
-				<string>3C47435ABB0C2E86BEBCED01B586689A</string>
-				<string>A6E1F33E5E70901D51168C3CD87C4B83</string>
-				<string>24A4FF8AA510D37A71F8B05E9F3ABBC8</string>
-				<string>DD13461C503AEC8BCD47C797E6258C98</string>
-				<string>EE5CB5E9FE03B620ED0319F91A2346CE</string>
-				<string>0D05B3339CD81E1C26C12EE927BA59A9</string>
-				<string>679D026B22A12944F6A307335269E5FA</string>
-				<string>7AEB8AA8DA4B1BE8FF5D8685A7DE5F54</string>
-				<string>BAB11B810910CAC94F7A3D86D9472CC9</string>
+				<string>E580FC997DC0D6414DB9785A5A9B51EB</string>
+				<string>535C2D0ED2186DB66A3337ABAE1113FA</string>
+				<string>95E48D0A34F5B8001AC7501BDB5FA6B0</string>
+				<string>FC851EA3065562D7F6BC9C66AC527683</string>
+				<string>3CA9E294E70A957BAE08A43CDD994153</string>
+				<string>044EDF007783DA1B209DCD328CF4C05B</string>
+				<string>9A81D97AB756A4384CB8E6B1425D03F1</string>
+				<string>4536CCA57EEFCB182E2ED33D80E56B0B</string>
+				<string>1FB5A4B3DA23D01E4054518FA0DE0416</string>
+				<string>618E77CF3B1450B4D4A3E574661563B1</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Classes</string>
+			<string>CustomTile</string>
 			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DBBAFE833B0F70D1258A5FFEE1200919</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7C6289158567B15AFA7C7D9FBDC4855B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>DCE1930817F163EFD636C4D63B4F97C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4853B237E9BE5C445C67A69A5FA91304</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>DD13461C503AEC8BCD47C797E6258C98</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTiledMapHelper.h</string>
+			<string>CustomTile</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2023,14 +2089,21 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>E6E529B8DB758F7DC711DE96BCCF5B5A</key>
+		<key>E443942D06BD3EC362C96CF62ECC0A04</key>
 		<dict>
 			<key>fileRef</key>
-			<string>FC548DE520DA31264EF7A0CEEF00BAE4</string>
+			<string>5D030EBAF76B0AEECF06CB7A2EB405C0</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
 		</dict>
-		<key>E7BB5777C162491FC4D35DB3C51947D3</key>
+		<key>E580FC997DC0D6414DB9785A5A9B51EB</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2039,22 +2112,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.h</string>
 			<key>path</key>
-			<string>Southigs_TiledServiceLayerOperation.h</string>
+			<string>Southgis_TiledServiceLayer.h</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>EA37FF5EC1EA4748B40ACC2FCE34A405</key>
+		<key>E6E529B8DB758F7DC711DE96BCCF5B5A</key>
 		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
+			<key>fileRef</key>
+			<string>76E9FD3035D1C452204475B9BA1278FA</string>
 			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SGSWMTSInfo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
+			<string>PBXBuildFile</string>
 		</dict>
 		<key>EB5707EF6749B8150AA5FC5DE2B34D3E</key>
 		<dict>
@@ -2074,7 +2141,7 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>EE5CB5E9FE03B620ED0319F91A2346CE</key>
+		<key>EDA37E2B40193FD0ABD6FAA121548111</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2083,29 +2150,16 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SouthgisTiledMapHelper.m</string>
+			<string>Southgis_BdWMTSLayerOperation.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F704FFC91D0D297F2DFC516FF690402E</key>
 		<dict>
 			<key>fileRef</key>
-			<string>EA37FF5EC1EA4748B40ACC2FCE34A405</string>
+			<string>46819643E359706DA8EAD9F023DF721C</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>F9B667B0217B002D832AD1C77DA87245</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>FAB8DC132981282473F7B55A3FD249C6</key>
 		<dict>
@@ -2124,11 +2178,11 @@
 		<key>FBBF9844226B768A041BEA03D5EFB3C5</key>
 		<dict>
 			<key>fileRef</key>
-			<string>32835A594AE7546B6B6BE99564562776</string>
+			<string>044EDF007783DA1B209DCD328CF4C05B</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
-		<key>FC548DE520DA31264EF7A0CEEF00BAE4</key>
+		<key>FC851EA3065562D7F6BC9C66AC527683</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
@@ -2137,61 +2191,7 @@
 			<key>lastKnownFileType</key>
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SouthgisTdtType.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FC7B8CDDBCD68F3E4023C1B0E1010E23</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F9B667B0217B002D832AD1C77DA87245</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>FD7C7C14AC28A3EE8810EE755D762C97</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSDictionary+YYAdd.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE2D9B1E7988D0509AADCCF5F93EEB4F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A9A1F700A370102E4C86C682C6251E64</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>FE5EFD52F98C1F2112DB155B2327EF54</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_WMTSLayerOperation.h</string>
+			<string>Southgis_TiledServiceLayerInfo.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -2208,16 +2208,16 @@
 			<key>remoteInfo</key>
 			<string>SGTileLayer</string>
 		</dict>
-		<key>FFCDEDF615CD4BA7A137E180491C322A</key>
+		<key>FEBC9B3A40E61C95E3A6F1195C290869</key>
 		<dict>
 			<key>includeInIndex</key>
 			<string>1</string>
 			<key>isa</key>
 			<string>PBXFileReference</string>
 			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
+			<string>sourcecode.c.objc</string>
 			<key>path</key>
-			<string>SGSWMTSLayer.h</string>
+			<string>SouthgisTianDiTuWMTSLayerInfoDelegate.m</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>

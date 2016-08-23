@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4041C62A3A93A416EEE1B945'
+               BlueprintIdentifier = 'F66761574516F71188357006'
                BlueprintName = 'SGTileLayer'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'SGTileLayer.framework'>

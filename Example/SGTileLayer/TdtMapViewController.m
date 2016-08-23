@@ -7,7 +7,7 @@
 //
 
 #import "TdtMapViewController.h"
-#import <SGTileLayer/SGTileLayerHead.h>
+#import <SGTileLayer/SGTileLayerHeader.h>
 
 @interface TdtMapViewController ()
 
