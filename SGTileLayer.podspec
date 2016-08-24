@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGTileLayer'
-  s.version          = '0.1.0'
+  s.version          = '0.0.2'
   s.summary          = '天地图瓦片图层加载，百度地图瓦片图层加载等相关功能.'
 
 # This description is used to generate tags and improve search results.
