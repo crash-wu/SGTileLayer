@@ -1,2228 +1,726 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0068CB196C61FB13331593BF265BCB6B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SGSWMTSLayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0197C48A3C89FC14AC453595B4661239</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3CA9E294E70A957BAE08A43CDD994153</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>01DB10D29537F6442C854E11791A655A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>D636E95016A2F6FF4B155632AA2A2F3C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SGTileLayer</string>
-			<key>path</key>
-			<string>SGTileLayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>03604D2746F0D26A42F4077AFDB35CFE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTiledMapHelper.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>044EDF007783DA1B209DCD328CF4C05B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>067F89A8365747564EE849805F4F91D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C2F56C6CC93F2C30E641DE826A2BA38C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>080F71E00CB08826B16374E7FD3C8357</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>SGTileLayer</string>
-			<key>target</key>
-			<string>14AC18F0237BF9279051D78485F7EA04</string>
-			<key>targetProxy</key>
-			<string>FE957C297F0E835B8DB4B8D6DE6862C1</string>
-		</dict>
-		<key>0B8B1DBA3F101BD0A18AF00DC572B4B6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>03604D2746F0D26A42F4077AFDB35CFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>0F2A181197240DA558BF4881504428C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4853B237E9BE5C445C67A69A5FA91304</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>1052D482F8E9BE49A4DD40CAF129E5FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A7AE4F7A2B2799848507C839D5C83C22</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>11BAF5B7316C77B5D5D1C04E36D4EA87</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGSWMTSInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>13D03E83AF2698585A614751DA22D0BB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSDictionary+YYAdd.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>14AC18F0237BF9279051D78485F7EA04</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>D87E977637523EA6D69FC20AB9593482</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9A1E5B5BC353951BB7FE2D7FB04F26A1</string>
-				<string>CC40A79ECF13CE537F0D39CB30B9ED43</string>
-				<string>DA4FFE6DE4DF96C48AB585E74B70BAB5</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SGTileLayer</string>
-			<key>productName</key>
-			<string>SGTileLayer</string>
-			<key>productReference</key>
-			<string>970D6D8CCC8E10D5E8DC8A2A37C66EEE</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>153F1DF1047AD223DE0A97C77413AD8E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>FAB8DC132981282473F7B55A3FD249C6</string>
-			<key>buildPhases</key>
-			<array>
-				<string>268E4078D9FA1A410D8E2726F843BFA1</string>
-				<string>A507915CE1B0B62861E7A19BB0BB4A7E</string>
-				<string>BC498BA9957B10969379C1AF0CB074CF</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>080F71E00CB08826B16374E7FD3C8357</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-SGTileLayer_Example</string>
-			<key>productName</key>
-			<string>Pods-SGTileLayer_Example</string>
-			<key>productReference</key>
-			<string>9EC6F34F6AE374C43B3631A25FF4A695</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>16F3E3A6C3FCE45DC6549CB4AD2B27D4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2631B0044D4DDC4F438CF04D3C257FB1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>175A86ACCB9A29736FFEA2D149DDB0D4</key>
-		<dict>
-			<key>fileRef</key>
-			<string>EDA37E2B40193FD0ABD6FAA121548111</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>17CC67FACBDEDDC230B867F420010FDE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FC851EA3065562D7F6BC9C66AC527683</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1F4AF9BEF7BEE7F764C482CA0AA08D76</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CA5DC94EC4A076305F24A811EB714469</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1FB5A4B3DA23D01E4054518FA0DE0416</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southigs_TiledServiceLayerOperation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2516831A55A2E6D377E52F38C248C418</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E079387BDD93AA05FE70DCC9CEB384E2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SGTileLayer/SGTileLayer-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SGTileLayer/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SGTileLayer/SGTileLayer.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>SGTileLayer</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2631B0044D4DDC4F438CF04D3C257FB1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTdt_TileLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>26418B58531B60CEDB49AC91A55FBC51</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>268E4078D9FA1A410D8E2726F843BFA1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>EB8BC48F9B8219FC99610910C80E2F03</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>26F85EC2CD513D4C0C0FA9F8CDF32DF8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_BdWMTSLayerInfoDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2A690992307D80DB83548333EECD5227</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGTileLayer-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>552D02D5BA751AC2E8790D2811D496CA</string>
-				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>3470B5ACB160EEA1CAC7AB51E0421682</key>
-		<dict>
-			<key>fileRef</key>
-			<string>535C2D0ED2186DB66A3337ABAE1113FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>36CD997ADED8073E1F67658E0F942792</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SGTileLayer.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>36F403893B0727149F81D4BFE232AF38</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4536CCA57EEFCB182E2ED33D80E56B0B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>37648A4E5EB1CDF3D043A94D18E954FE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A81D97AB756A4384CB8E6B1425D03F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>396CE6F701AB851664CEC0B4245A0811</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>B5AD1F417C7E8935AEDAD24D8C4D584C</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-SGTileLayer_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_SGTileLayer_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3AE58A6EB0F28E57178C43C95C28AA23</key>
-		<dict>
-			<key>fileRef</key>
-			<string>618E77CF3B1450B4D4A3E574661563B1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>3CA9E294E70A957BAE08A43CDD994153</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3EF06551410E04D78DDB838ADADB95D7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>4D0162505F4B38F117C4C37DA317A064</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4536CCA57EEFCB182E2ED33D80E56B0B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46819643E359706DA8EAD9F023DF721C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SGSWMTSInfo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>46EDEF6A929CE2752516F77B8CA294F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_WMTSLayerOperation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>47C59AA90D79B4DB970F0651D281EDFE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4853B237E9BE5C445C67A69A5FA91304</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGTileLayer-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>488F726623D0B93A4ABC2138CCE59594</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>E079387BDD93AA05FE70DCC9CEB384E2</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/SGTileLayer/SGTileLayer-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/SGTileLayer/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/SGTileLayer/SGTileLayer.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>SGTileLayer</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>494236FA985675D55A51703AD96BD6CF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGTileLayerUtil.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4D0162505F4B38F117C4C37DA317A064</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4F261D505CFC223C8CEC9EC899E19EC1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B8FE0A07E06F32372ADC65FEF01402CE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>52D27E47264431D94520E10C52212979</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>535C2D0ED2186DB66A3337ABAE1113FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>537BFFDD986C3050647A9FF9AEC1285D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9D43C36207CF017A7EEADD118079A467</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>552D02D5BA751AC2E8790D2811D496CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>5D030EBAF76B0AEECF06CB7A2EB405C0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_BdWMTSLayerOperation.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>618E77CF3B1450B4D4A3E574661563B1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southigs_TiledServiceLayerOperation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>63C7CE0B76DFB3BC24F4FBFB290D396E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C58E55AC83D8AD6472FF31388DC104CD</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>656D370B3AB0FF3648B16EB527257C09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1FB5A4B3DA23D01E4054518FA0DE0416</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>67CD5BCD31F1BC517F96FA8C4431F8DF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisBdWMTSLayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>694A237E17643C5E9E93D4F81E690F0F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B166BA1A01C7911468FBE8332B0D3DA1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6A825774FB2F8CB4E1F09DD53117DC62</key>
-		<dict>
-			<key>fileRef</key>
-			<string>494236FA985675D55A51703AD96BD6CF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6C0C1AD5FE6E9ECFB73E15069A938B62</key>
-		<dict>
-			<key>fileRef</key>
-			<string>FEBC9B3A40E61C95E3A6F1195C290869</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6EE8234770A27246CBB63DC6EE6D562E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGSWMTSLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6F96B0E8853850773C14E5A5827F565B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>91C446411508CA806F3FB4FA6B4882EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>730F5C6153DF4D571A508F62169B4947</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>736AE73DABC38FDDDE221BEB651C37EC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>67CD5BCD31F1BC517F96FA8C4431F8DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>747A6BDBD24ED8057F07C4CE16D5D6B5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>11BAF5B7316C77B5D5D1C04E36D4EA87</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>7686518BA185A794E9CD9AE915C53A8D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTdt_LayerInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>76AFD54124C9F6F575C4763A59DCAB53</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisBaseTiledServiceLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>76E9FD3035D1C452204475B9BA1278FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisTdtType.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A291EEE6569B1952EDC4944135A6D79</key>
-		<dict>
-			<key>fileRef</key>
-			<string>D497FB524BE77F60764CFBAF2DD86790</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>6F96B0E8853850773C14E5A5827F565B</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>8DF64D080F31C6A3C4DD2C9285F7FEE3</string>
-				<string>C41017171AF0BA61276EFCE91A66E0FE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7E9FE33AEE6DFBE3832C1610A301DFEF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTianDiTuWMTSLayerInfoDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7F1008401562B9BB760A6851AF776413</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisTdtType.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7FB87E3EB4BE9B84AA660B88C10722B6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGTileLayerHeader.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8306DDC90AD5E6624512B055F5CA8405</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSDictionary+YYAdd.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>835203D3EC8B118D20693D503E30E49F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8306DDC90AD5E6624512B055F5CA8405</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>83BA367638AFE73BC12061CC3F3612D9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>85165B9E3BFD34C994160E865FC5AB70</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>26418B58531B60CEDB49AC91A55FBC51</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-SGTileLayer_Example/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_SGTileLayer_Example</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>8A17EF546A25C0ADFAB3ACD20B1E2DBB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>730F5C6153DF4D571A508F62169B4947</string>
-				<string>EB5707EF6749B8150AA5FC5DE2B34D3E</string>
-				<string>47C59AA90D79B4DB970F0651D281EDFE</string>
-				<string>B49B2F5324B1BCB6EF6BA5270F5C98A1</string>
-				<string>83BA367638AFE73BC12061CC3F3612D9</string>
-				<string>C43BE40599D7CC3A8B1DE55DD99AA3CA</string>
-				<string>B6E52B712BA15F76AA3ABC47BBD1BD8C</string>
-				<string>4D0162505F4B38F117C4C37DA317A064</string>
-				<string>26418B58531B60CEDB49AC91A55FBC51</string>
-				<string>B5AD1F417C7E8935AEDAD24D8C4D584C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-SGTileLayer_Example</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-SGTileLayer_Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8BB24E2D6EB1CE083FBCE5D3A698A5E9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7FB87E3EB4BE9B84AA660B88C10722B6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>8DF64D080F31C6A3C4DD2C9285F7FEE3</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9EC6F34F6AE374C43B3631A25FF4A695</string>
-				<string>970D6D8CCC8E10D5E8DC8A2A37C66EEE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>91C446411508CA806F3FB4FA6B4882EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>01DB10D29537F6442C854E11791A655A</string>
-				<string>BEAC64B9B758891B8E02F9BBB0BBE405</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SGTileLayer</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>957B2113B24264EEDCE44F73389A599E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>26F85EC2CD513D4C0C0FA9F8CDF32DF8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>95E48D0A34F5B8001AC7501BDB5FA6B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>970D6D8CCC8E10D5E8DC8A2A37C66EEE</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>SGTileLayer.framework</string>
-			<key>path</key>
-			<string>SGTileLayer.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>98BA8B9D2781B09A1CAEB9906E82BD0A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7E9FE33AEE6DFBE3832C1610A301DFEF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>9A1E5B5BC353951BB7FE2D7FB04F26A1</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>835203D3EC8B118D20693D503E30E49F</string>
-				<string>F704FFC91D0D297F2DFC516FF690402E</string>
-				<string>C3B4E396F212DEB720A940F731594EBB</string>
-				<string>B7E6C0163736D58F6E019545668CE398</string>
-				<string>1F4AF9BEF7BEE7F764C482CA0AA08D76</string>
-				<string>7A291EEE6569B1952EDC4944135A6D79</string>
-				<string>067F89A8365747564EE849805F4F91D7</string>
-				<string>175A86ACCB9A29736FFEA2D149DDB0D4</string>
-				<string>3470B5ACB160EEA1CAC7AB51E0421682</string>
-				<string>17CC67FACBDEDDC230B867F420010FDE</string>
-				<string>36F403893B0727149F81D4BFE232AF38</string>
-				<string>FBBF9844226B768A041BEA03D5EFB3C5</string>
-				<string>A9CC1690806F70F71B4E71C5630D8BEB</string>
-				<string>537BFFDD986C3050647A9FF9AEC1285D</string>
-				<string>736AE73DABC38FDDDE221BEB651C37EC</string>
-				<string>4F261D505CFC223C8CEC9EC899E19EC1</string>
-				<string>63C7CE0B76DFB3BC24F4FBFB290D396E</string>
-				<string>E6E529B8DB758F7DC711DE96BCCF5B5A</string>
-				<string>6C0C1AD5FE6E9ECFB73E15069A938B62</string>
-				<string>D290BB159E2347763C4411D2CA6343E8</string>
-				<string>3AE58A6EB0F28E57178C43C95C28AA23</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9A81D97AB756A4384CB8E6B1425D03F1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9D43C36207CF017A7EEADD118079A467</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisBaseTiledServiceLayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9EC6F34F6AE374C43B3631A25FF4A695</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_SGTileLayer_Example.framework</string>
-			<key>path</key>
-			<string>Pods_SGTileLayer_Example.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>A1A45BE47BC70706AD10C155E0D74F37</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisTiledMapHelper.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A4BDC700348020DE4671BAACBABB8FD7</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>46EDEF6A929CE2752516F77B8CA294F1</string>
-				<string>AF561FD0D21E701D02DB601A56C39158</string>
-				<string>7686518BA185A794E9CD9AE915C53A8D</string>
-				<string>B8FE0A07E06F32372ADC65FEF01402CE</string>
-				<string>2631B0044D4DDC4F438CF04D3C257FB1</string>
-				<string>C58E55AC83D8AD6472FF31388DC104CD</string>
-				<string>7F1008401562B9BB760A6851AF776413</string>
-				<string>76E9FD3035D1C452204475B9BA1278FA</string>
-				<string>7E9FE33AEE6DFBE3832C1610A301DFEF</string>
-				<string>FEBC9B3A40E61C95E3A6F1195C290869</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>TdtTile</string>
-			<key>path</key>
-			<string>TdtTile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A507915CE1B0B62861E7A19BB0BB4A7E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>52D27E47264431D94520E10C52212979</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A7AE4F7A2B2799848507C839D5C83C22</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SouthgisBdWMTSLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A9CC1690806F70F71B4E71C5630D8BEB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>AF561FD0D21E701D02DB601A56C39158</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A9F7FDF3CA6FEA6CCA309B89FAECC307</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>26F85EC2CD513D4C0C0FA9F8CDF32DF8</string>
-				<string>C2F56C6CC93F2C30E641DE826A2BA38C</string>
-				<string>5D030EBAF76B0AEECF06CB7A2EB405C0</string>
-				<string>EDA37E2B40193FD0ABD6FAA121548111</string>
-				<string>A7AE4F7A2B2799848507C839D5C83C22</string>
-				<string>67CD5BCD31F1BC517F96FA8C4431F8DF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>BdTile</string>
-			<key>path</key>
-			<string>BdTile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>AE77430DDAA3E0B2A35B151A9CBDF634</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7F1008401562B9BB760A6851AF776413</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>AF561FD0D21E701D02DB601A56C39158</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_WMTSLayerOperation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B166BA1A01C7911468FBE8332B0D3DA1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SGSWMTSLayerInfo.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B49B2F5324B1BCB6EF6BA5270F5C98A1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B524F878560F7AEA734A52A542EB7707</key>
-		<dict>
-			<key>fileRef</key>
-			<string>7686518BA185A794E9CD9AE915C53A8D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B58BC9754087EA44F75ADCEFEF36834C</key>
-		<dict>
-			<key>fileRef</key>
-			<string>13D03E83AF2698585A614751DA22D0BB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B5AD1F417C7E8935AEDAD24D8C4D584C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6E52B712BA15F76AA3ABC47BBD1BD8C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B7E6C0163736D58F6E019545668CE398</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CC44E64013A532F3B84F4D50CDFD946D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B82A03EB3E12939B35ECBC91653B38C0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46EDEF6A929CE2752516F77B8CA294F1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>B8FE0A07E06F32372ADC65FEF01402CE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisTdt_LayerInfo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BC498BA9957B10969379C1AF0CB074CF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>3EF06551410E04D78DDB838ADADB95D7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>BD3B2052219A8793233B0BAEAC9709E9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BEAC64B9B758891B8E02F9BBB0BBE405</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BD3B2052219A8793233B0BAEAC9709E9</string>
-				<string>36CD997ADED8073E1F67658E0F942792</string>
-				<string>E079387BDD93AA05FE70DCC9CEB384E2</string>
-				<string>CA5DC94EC4A076305F24A811EB714469</string>
-				<string>2A690992307D80DB83548333EECD5227</string>
-				<string>4853B237E9BE5C445C67A69A5FA91304</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/SGTileLayer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1200E3D7F285705AFBAAA64E0F7E132</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>13D03E83AF2698585A614751DA22D0BB</string>
-				<string>8306DDC90AD5E6624512B055F5CA8405</string>
-				<string>11BAF5B7316C77B5D5D1C04E36D4EA87</string>
-				<string>46819643E359706DA8EAD9F023DF721C</string>
-				<string>6EE8234770A27246CBB63DC6EE6D562E</string>
-				<string>0068CB196C61FB13331593BF265BCB6B</string>
-				<string>B166BA1A01C7911468FBE8332B0D3DA1</string>
-				<string>CC44E64013A532F3B84F4D50CDFD946D</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>SGSWMTS</string>
-			<key>path</key>
-			<string>SGSWMTS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C2F56C6CC93F2C30E641DE826A2BA38C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_BdWMTSLayerInfoDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3B4E396F212DEB720A940F731594EBB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0068CB196C61FB13331593BF265BCB6B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C41017171AF0BA61276EFCE91A66E0FE</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>8A17EF546A25C0ADFAB3ACD20B1E2DBB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C43BE40599D7CC3A8B1DE55DD99AA3CA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C58E55AC83D8AD6472FF31388DC104CD</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisTdt_TileLayer.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5E90D522CE19C2D26FA4F00561747FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>95E48D0A34F5B8001AC7501BDB5FA6B0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>C7A8C56A80828438349119DE77F6A38B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>76AFD54124C9F6F575C4763A59DCAB53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>CA5DC94EC4A076305F24A811EB714469</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SGTileLayer-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CC40A79ECF13CE537F0D39CB30B9ED43</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E324E23F6E9DD2215C4BC383FFEACB47</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CC44E64013A532F3B84F4D50CDFD946D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SGSWMTSLayerInfo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDD2D8E6B231B556B7225886D03D699D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6EE8234770A27246CBB63DC6EE6D562E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D290BB159E2347763C4411D2CA6343E8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A1A45BE47BC70706AD10C155E0D74F37</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>8DF64D080F31C6A3C4DD2C9285F7FEE3</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>153F1DF1047AD223DE0A97C77413AD8E</string>
-				<string>14AC18F0237BF9279051D78485F7EA04</string>
-			</array>
-		</dict>
-		<key>D497FB524BE77F60764CFBAF2DD86790</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SGTileLayerUtil.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D636E95016A2F6FF4B155632AA2A2F3C</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>7FB87E3EB4BE9B84AA660B88C10722B6</string>
-				<string>494236FA985675D55A51703AD96BD6CF</string>
-				<string>D497FB524BE77F60764CFBAF2DD86790</string>
-				<string>76AFD54124C9F6F575C4763A59DCAB53</string>
-				<string>9D43C36207CF017A7EEADD118079A467</string>
-				<string>03604D2746F0D26A42F4077AFDB35CFE</string>
-				<string>A1A45BE47BC70706AD10C155E0D74F37</string>
-				<string>A9F7FDF3CA6FEA6CCA309B89FAECC307</string>
-				<string>DD48C9DC209136BA0A0B840A81E0E644</string>
-				<string>C1200E3D7F285705AFBAAA64E0F7E132</string>
-				<string>A4BDC700348020DE4671BAACBABB8FD7</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D6FDFE0F0F0DC3670C7E7547F87B37B6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E580FC997DC0D6414DB9785A5A9B51EB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>D87E977637523EA6D69FC20AB9593482</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>2516831A55A2E6D377E52F38C248C418</string>
-				<string>488F726623D0B93A4ABC2138CCE59594</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>DA4FFE6DE4DF96C48AB585E74B70BAB5</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B58BC9754087EA44F75ADCEFEF36834C</string>
-				<string>747A6BDBD24ED8057F07C4CE16D5D6B5</string>
-				<string>CDD2D8E6B231B556B7225886D03D699D</string>
-				<string>694A237E17643C5E9E93D4F81E690F0F</string>
-				<string>0F2A181197240DA558BF4881504428C0</string>
-				<string>8BB24E2D6EB1CE083FBCE5D3A698A5E9</string>
-				<string>6A825774FB2F8CB4E1F09DD53117DC62</string>
-				<string>957B2113B24264EEDCE44F73389A599E</string>
-				<string>E443942D06BD3EC362C96CF62ECC0A04</string>
-				<string>D6FDFE0F0F0DC3670C7E7547F87B37B6</string>
-				<string>C5E90D522CE19C2D26FA4F00561747FB</string>
-				<string>37648A4E5EB1CDF3D043A94D18E954FE</string>
-				<string>0197C48A3C89FC14AC453595B4661239</string>
-				<string>B82A03EB3E12939B35ECBC91653B38C0</string>
-				<string>C7A8C56A80828438349119DE77F6A38B</string>
-				<string>1052D482F8E9BE49A4DD40CAF129E5FB</string>
-				<string>B524F878560F7AEA734A52A542EB7707</string>
-				<string>16F3E3A6C3FCE45DC6549CB4AD2B27D4</string>
-				<string>AE77430DDAA3E0B2A35B151A9CBDF634</string>
-				<string>98BA8B9D2781B09A1CAEB9906E82BD0A</string>
-				<string>0B8B1DBA3F101BD0A18AF00DC572B4B6</string>
-				<string>656D370B3AB0FF3648B16EB527257C09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DD48C9DC209136BA0A0B840A81E0E644</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E580FC997DC0D6414DB9785A5A9B51EB</string>
-				<string>535C2D0ED2186DB66A3337ABAE1113FA</string>
-				<string>95E48D0A34F5B8001AC7501BDB5FA6B0</string>
-				<string>FC851EA3065562D7F6BC9C66AC527683</string>
-				<string>3CA9E294E70A957BAE08A43CDD994153</string>
-				<string>044EDF007783DA1B209DCD328CF4C05B</string>
-				<string>9A81D97AB756A4384CB8E6B1425D03F1</string>
-				<string>4536CCA57EEFCB182E2ED33D80E56B0B</string>
-				<string>1FB5A4B3DA23D01E4054518FA0DE0416</string>
-				<string>618E77CF3B1450B4D4A3E574661563B1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>CustomTile</string>
-			<key>path</key>
-			<string>CustomTile</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E079387BDD93AA05FE70DCC9CEB384E2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>SGTileLayer.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E324E23F6E9DD2215C4BC383FFEACB47</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E443942D06BD3EC362C96CF62ECC0A04</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5D030EBAF76B0AEECF06CB7A2EB405C0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>E580FC997DC0D6414DB9785A5A9B51EB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayer.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E6E529B8DB758F7DC711DE96BCCF5B5A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>76E9FD3035D1C452204475B9BA1278FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EB5707EF6749B8150AA5FC5DE2B34D3E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-SGTileLayer_Example.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EB8BC48F9B8219FC99610910C80E2F03</key>
-		<dict>
-			<key>fileRef</key>
-			<string>83BA367638AFE73BC12061CC3F3612D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>EDA37E2B40193FD0ABD6FAA121548111</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_BdWMTSLayerOperation.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F704FFC91D0D297F2DFC516FF690402E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>46819643E359706DA8EAD9F023DF721C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FAB8DC132981282473F7B55A3FD249C6</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>85165B9E3BFD34C994160E865FC5AB70</string>
-				<string>396CE6F701AB851664CEC0B4245A0811</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>FBBF9844226B768A041BEA03D5EFB3C5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>044EDF007783DA1B209DCD328CF4C05B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>FC851EA3065562D7F6BC9C66AC527683</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Southgis_TiledServiceLayerInfo.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FE957C297F0E835B8DB4B8D6DE6862C1</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>14AC18F0237BF9279051D78485F7EA04</string>
-			<key>remoteInfo</key>
-			<string>SGTileLayer</string>
-		</dict>
-		<key>FEBC9B3A40E61C95E3A6F1195C290869</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SouthgisTianDiTuWMTSLayerInfoDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B2E353FA0E49468BAEB5D2F716417E5 /* SGSWMTSLayerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = B166BA1A01C7911468FBE8332B0D3DA1 /* SGSWMTSLayerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1170831244B9B6D009BEAF0C8EB999C6 /* Southigs_TiledServiceLayerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 618E77CF3B1450B4D4A3E574661563B1 /* Southigs_TiledServiceLayerOperation.m */; };
+		19975C3B920AE9762F79E2C4927AEC7E /* SGSWMTSInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 11BAF5B7316C77B5D5D1C04E36D4EA87 /* SGSWMTSInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AB1382FD682E656DA0BD17446840558 /* SouthgisTdt_LayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FE0A07E06F32372ADC65FEF01402CE /* SouthgisTdt_LayerInfo.m */; };
+		208B79040B790CE4C1874A45A2CCA08B /* SouthgisTdtType.m in Sources */ = {isa = PBXBuildFile; fileRef = 76E9FD3035D1C452204475B9BA1278FA /* SouthgisTdtType.m */; };
+		229330CF62BE9F3A2F4D4E37828B44D6 /* Southgis_TiledServiceLayerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 95E48D0A34F5B8001AC7501BDB5FA6B0 /* Southgis_TiledServiceLayerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		24D9F27699971474C4B6C3AF98562B61 /* Southgis_TiledServiceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 535C2D0ED2186DB66A3337ABAE1113FA /* Southgis_TiledServiceLayer.m */; };
+		24FAB36160C229BC077A8995134D1B07 /* SouthgisTiledMapHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 03604D2746F0D26A42F4077AFDB35CFE /* SouthgisTiledMapHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36DDB29D40EBE0210BA46BA62DC4BD3A /* SouthgisTdt_LayerInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7686518BA185A794E9CD9AE915C53A8D /* SouthgisTdt_LayerInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AA16B8890BD912FF2F8B41A120C05C9 /* SouthgisTdt_TileLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2631B0044D4DDC4F438CF04D3C257FB1 /* SouthgisTdt_TileLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4036A3B5A77E2D6A60E40E3E6619488B /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8306DDC90AD5E6624512B055F5CA8405 /* NSDictionary+YYAdd.m */; };
+		47A68D79A4179EDD9D0579820D624A32 /* SGTileLayerUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 494236FA985675D55A51703AD96BD6CF /* SGTileLayerUtil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F97D8BB756217847E526A6362756FB3 /* Southgis_WMTSLayerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EDEF6A929CE2752516F77B8CA294F1 /* Southgis_WMTSLayerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FA063A17C3294A7FC4F5010108CF872 /* Southgis_BdWMTSLayerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EDA37E2B40193FD0ABD6FAA121548111 /* Southgis_BdWMTSLayerOperation.m */; };
+		5BD7492822C9E42B0C2734B7023E6EFE /* SouthgisTianDiTuWMTSLayerInfoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9FE33AEE6DFBE3832C1610A301DFEF /* SouthgisTianDiTuWMTSLayerInfoDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		60DD2DB55D15BE09D59C71C78FD2DEC7 /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A81D97AB756A4384CB8E6B1425D03F1 /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		625B75891FA3C7BD78321695DCF892D0 /* SouthgisBaseTiledServiceLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D43C36207CF017A7EEADD118079A467 /* SouthgisBaseTiledServiceLayer.m */; };
+		676A57511DE9F1928B712C007C0530B1 /* Southgis_TiledServiceLayerInfoOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CA9E294E70A957BAE08A43CDD994153 /* Southgis_TiledServiceLayerInfoOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		691F43A49F3B1E1B77AB61144B66DBA8 /* SouthgisTiledMapHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A1A45BE47BC70706AD10C155E0D74F37 /* SouthgisTiledMapHelper.m */; };
+		6B84F643A346707EAD669F0EC593A744 /* SGSWMTSLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0068CB196C61FB13331593BF265BCB6B /* SGSWMTSLayer.m */; };
+		6EEC44E836A47CD392367408FD67DE34 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		6FDDFF96A36248D938C23FF4086293A1 /* Pods-SGTileLayer_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 83BA367638AFE73BC12061CC3F3612D9 /* Pods-SGTileLayer_Example-dummy.m */; };
+		6FFE616CD8F6B09691138D285D3CFF0E /* Southigs_TiledServiceLayerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FB5A4B3DA23D01E4054518FA0DE0416 /* Southigs_TiledServiceLayerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FE95C38BBBA6A2065D5B302C55E8001 /* SGTileLayer-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4853B237E9BE5C445C67A69A5FA91304 /* SGTileLayer-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95E6F08C31B2C31BDD5A0D6C1D2C9EED /* SGSWMTSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EE8234770A27246CBB63DC6EE6D562E /* SGSWMTSLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0094C4F086FC901DFF1539BEEDB57BE /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 4536CCA57EEFCB182E2ED33D80E56B0B /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m */; };
+		A10AAF3792E42EE67546B7A8FD7DA40F /* SouthgisBdWMTSLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CD5BCD31F1BC517F96FA8C4431F8DF /* SouthgisBdWMTSLayer.m */; };
+		A610C156CDFCE7FD0B51CCD561BAA43E /* SouthgisTdt_TileLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C58E55AC83D8AD6472FF31388DC104CD /* SouthgisTdt_TileLayer.m */; };
+		ADF489BAD94FA9183388601F2B5D2706 /* SGSWMTSLayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = CC44E64013A532F3B84F4D50CDFD946D /* SGSWMTSLayerInfo.m */; };
+		B4ED293C526C864D0E98E7A0084B24F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B62F430DCBEB885EE5DD1F319ACE644A /* Southgis_BdWMTSLayerOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D030EBAF76B0AEECF06CB7A2EB405C0 /* Southgis_BdWMTSLayerOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B717541E39339D9779B488B145E5CA7D /* SGTileLayerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D497FB524BE77F60764CFBAF2DD86790 /* SGTileLayerUtil.m */; };
+		B842AD01A0E9CED42960ACA3AFC70105 /* Southgis_BdWMTSLayerInfoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F56C6CC93F2C30E641DE826A2BA38C /* Southgis_BdWMTSLayerInfoDelegate.m */; };
+		BBEF4D1682B7EF80FEC5CF4E331BDCF5 /* SouthgisBaseTiledServiceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 76AFD54124C9F6F575C4763A59DCAB53 /* SouthgisBaseTiledServiceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1A159F47494058A3F2C44A13511BA83 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBC9B3A40E61C95E3A6F1195C290869 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m */; };
+		D0C2094BA82897B32C237A5A062FD4A7 /* SouthgisBdWMTSLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = A7AE4F7A2B2799848507C839D5C83C22 /* SouthgisBdWMTSLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D29896D092E7B1D2698A2AA8EC125161 /* SGTileLayer-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA5DC94EC4A076305F24A811EB714469 /* SGTileLayer-dummy.m */; };
+		D4F5F6E72065D9C994BA3E041CAF282C /* Southgis_TiledServiceLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = E580FC997DC0D6414DB9785A5A9B51EB /* Southgis_TiledServiceLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDF12548754D9C7335C5CD5871C37512 /* SGTileLayerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FB87E3EB4BE9B84AA660B88C10722B6 /* SGTileLayerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF62007EE19EC27BC07543D1587B7819 /* NSDictionary+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 13D03E83AF2698585A614751DA22D0BB /* NSDictionary+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0BFD4705514D1186AE071EABD70B460 /* Pods-SGTileLayer_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D0162505F4B38F117C4C37DA317A064 /* Pods-SGTileLayer_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E50AE013F0B73B174C463448543800CD /* SouthgisTdtType.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F1008401562B9BB760A6851AF776413 /* SouthgisTdtType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69589EBA9E321B6BF0EAAE391AD9D15 /* Southgis_TiledServiceLayerInfoOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 044EDF007783DA1B209DCD328CF4C05B /* Southgis_TiledServiceLayerInfoOperation.m */; };
+		EBFA45ED534A0EA35B3B7A6712A0FD25 /* SGSWMTSInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 46819643E359706DA8EAD9F023DF721C /* SGSWMTSInfo.m */; };
+		F7067D21F25F6243B55F39D7D7A256D4 /* Southgis_WMTSLayerOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = AF561FD0D21E701D02DB601A56C39158 /* Southgis_WMTSLayerOperation.m */; };
+		FA1EC2AFCB5726C9BCF46E4D29731898 /* Southgis_TiledServiceLayerInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = FC851EA3065562D7F6BC9C66AC527683 /* Southgis_TiledServiceLayerInfo.m */; };
+		FA570B39AD60B055BC79A159CF2124DA /* Southgis_BdWMTSLayerInfoDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 26F85EC2CD513D4C0C0FA9F8CDF32DF8 /* Southgis_BdWMTSLayerInfoDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F7CCC955E12BC31D3D73826FCE1E8843 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FF12C0D6948820A5371EF6D7BD87F05;
+			remoteInfo = SGTileLayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0068CB196C61FB13331593BF265BCB6B /* SGSWMTSLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGSWMTSLayer.m; sourceTree = "<group>"; };
+		03604D2746F0D26A42F4077AFDB35CFE /* SouthgisTiledMapHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SouthgisTiledMapHelper.h; sourceTree = "<group>"; };
+		044EDF007783DA1B209DCD328CF4C05B /* Southgis_TiledServiceLayerInfoOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Southgis_TiledServiceLayerInfoOperation.m; sourceTree = "<group>"; };
+		11BAF5B7316C77B5D5D1C04E36D4EA87 /* SGSWMTSInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGSWMTSInfo.h; sourceTree = "<group>"; };
+		13D03E83AF2698585A614751DA22D0BB /* NSDictionary+YYAdd.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+YYAdd.h"; sourceTree = "<group>"; };
+		1FB5A4B3DA23D01E4054518FA0DE0416 /* Southigs_TiledServiceLayerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Southigs_TiledServiceLayerOperation.h; sourceTree = "<group>"; };
+		2631B0044D4DDC4F438CF04D3C257FB1 /* SouthgisTdt_TileLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SouthgisTdt_TileLayer.h; sourceTree = "<group>"; };
+		26418B58531B60CEDB49AC91A55FBC51 /* Pods-SGTileLayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGTileLayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		26F85EC2CD513D4C0C0FA9F8CDF32DF8 /* Southgis_BdWMTSLayerInfoDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Southgis_BdWMTSLayerInfoDelegate.h; sourceTree = "<group>"; };
+		2A690992307D80DB83548333EECD5227 /* SGTileLayer-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGTileLayer-prefix.pch"; sourceTree = "<group>"; };
+		36CD997ADED8073E1F67658E0F942792 /* SGTileLayer.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SGTileLayer.modulemap; sourceTree = "<group>"; };
+		3CA9E294E70A957BAE08A43CDD994153 /* Southgis_TiledServiceLayerInfoOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Southgis_TiledServiceLayerInfoOperation.h; sourceTree = "<group>"; };
+		4536CCA57EEFCB182E2ED33D80E56B0B /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m"; sourceTree = "<group>"; };
+		46819643E359706DA8EAD9F023DF721C /* SGSWMTSInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGSWMTSInfo.m; sourceTree = "<group>"; };
+		46EDEF6A929CE2752516F77B8CA294F1 /* Southgis_WMTSLayerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Southgis_WMTSLayerOperation.h; sourceTree = "<group>"; };
+		47C59AA90D79B4DB970F0651D281EDFE /* Pods-SGTileLayer_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SGTileLayer_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4853B237E9BE5C445C67A69A5FA91304 /* SGTileLayer-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SGTileLayer-umbrella.h"; sourceTree = "<group>"; };
+		494236FA985675D55A51703AD96BD6CF /* SGTileLayerUtil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGTileLayerUtil.h; sourceTree = "<group>"; };
+		4D0162505F4B38F117C4C37DA317A064 /* Pods-SGTileLayer_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SGTileLayer_Example-umbrella.h"; sourceTree = "<group>"; };
+		535C2D0ED2186DB66A3337ABAE1113FA /* Southgis_TiledServiceLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Southgis_TiledServiceLayer.m; sourceTree = "<group>"; };
+		5D030EBAF76B0AEECF06CB7A2EB405C0 /* Southgis_BdWMTSLayerOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Southgis_BdWMTSLayerOperation.h; sourceTree = "<group>"; };
+		618E77CF3B1450B4D4A3E574661563B1 /* Southigs_TiledServiceLayerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Southigs_TiledServiceLayerOperation.m; sourceTree = "<group>"; };
+		67CD5BCD31F1BC517F96FA8C4431F8DF /* SouthgisBdWMTSLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SouthgisBdWMTSLayer.m; sourceTree = "<group>"; };
+		6EE8234770A27246CBB63DC6EE6D562E /* SGSWMTSLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGSWMTSLayer.h; sourceTree = "<group>"; };
+		730F5C6153DF4D571A508F62169B4947 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7686518BA185A794E9CD9AE915C53A8D /* SouthgisTdt_LayerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SouthgisTdt_LayerInfo.h; sourceTree = "<group>"; };
+		76AFD54124C9F6F575C4763A59DCAB53 /* SouthgisBaseTiledServiceLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SouthgisBaseTiledServiceLayer.h; sourceTree = "<group>"; };
+		76E9FD3035D1C452204475B9BA1278FA /* SouthgisTdtType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SouthgisTdtType.m; sourceTree = "<group>"; };
+		7E9FE33AEE6DFBE3832C1610A301DFEF /* SouthgisTianDiTuWMTSLayerInfoDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SouthgisTianDiTuWMTSLayerInfoDelegate.h; sourceTree = "<group>"; };
+		7F1008401562B9BB760A6851AF776413 /* SouthgisTdtType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SouthgisTdtType.h; sourceTree = "<group>"; };
+		7FB87E3EB4BE9B84AA660B88C10722B6 /* SGTileLayerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGTileLayerHeader.h; sourceTree = "<group>"; };
+		8306DDC90AD5E6624512B055F5CA8405 /* NSDictionary+YYAdd.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YYAdd.m"; sourceTree = "<group>"; };
+		83BA367638AFE73BC12061CC3F3612D9 /* Pods-SGTileLayer_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SGTileLayer_Example-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95E48D0A34F5B8001AC7501BDB5FA6B0 /* Southgis_TiledServiceLayerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Southgis_TiledServiceLayerInfo.h; sourceTree = "<group>"; };
+		9A81D97AB756A4384CB8E6B1425D03F1 /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h"; sourceTree = "<group>"; };
+		9D43C36207CF017A7EEADD118079A467 /* SouthgisBaseTiledServiceLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SouthgisBaseTiledServiceLayer.m; sourceTree = "<group>"; };
+		A1A45BE47BC70706AD10C155E0D74F37 /* SouthgisTiledMapHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SouthgisTiledMapHelper.m; sourceTree = "<group>"; };
+		A7AE4F7A2B2799848507C839D5C83C22 /* SouthgisBdWMTSLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SouthgisBdWMTSLayer.h; sourceTree = "<group>"; };
+		AF561FD0D21E701D02DB601A56C39158 /* Southgis_WMTSLayerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Southgis_WMTSLayerOperation.m; sourceTree = "<group>"; };
+		B166BA1A01C7911468FBE8332B0D3DA1 /* SGSWMTSLayerInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SGSWMTSLayerInfo.h; sourceTree = "<group>"; };
+		B49B2F5324B1BCB6EF6BA5270F5C98A1 /* Pods-SGTileLayer_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SGTileLayer_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		B5AD1F417C7E8935AEDAD24D8C4D584C /* Pods-SGTileLayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SGTileLayer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B6E52B712BA15F76AA3ABC47BBD1BD8C /* Pods-SGTileLayer_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGTileLayer_Example-resources.sh"; sourceTree = "<group>"; };
+		B8FE0A07E06F32372ADC65FEF01402CE /* SouthgisTdt_LayerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SouthgisTdt_LayerInfo.m; sourceTree = "<group>"; };
+		BD3B2052219A8793233B0BAEAC9709E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2F56C6CC93F2C30E641DE826A2BA38C /* Southgis_BdWMTSLayerInfoDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Southgis_BdWMTSLayerInfoDelegate.m; sourceTree = "<group>"; };
+		C43BE40599D7CC3A8B1DE55DD99AA3CA /* Pods-SGTileLayer_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SGTileLayer_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C58E55AC83D8AD6472FF31388DC104CD /* SouthgisTdt_TileLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SouthgisTdt_TileLayer.m; sourceTree = "<group>"; };
+		CA5DC94EC4A076305F24A811EB714469 /* SGTileLayer-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SGTileLayer-dummy.m"; sourceTree = "<group>"; };
+		CC44E64013A532F3B84F4D50CDFD946D /* SGSWMTSLayerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGSWMTSLayerInfo.m; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D497FB524BE77F60764CFBAF2DD86790 /* SGTileLayerUtil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SGTileLayerUtil.m; sourceTree = "<group>"; };
+		DDC9F02FB58DB884EDEA20DB4448A969 /* Pods_SGTileLayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTileLayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E079387BDD93AA05FE70DCC9CEB384E2 /* SGTileLayer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SGTileLayer.xcconfig; sourceTree = "<group>"; };
+		E580FC997DC0D6414DB9785A5A9B51EB /* Southgis_TiledServiceLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Southgis_TiledServiceLayer.h; sourceTree = "<group>"; };
+		EB5707EF6749B8150AA5FC5DE2B34D3E /* Pods-SGTileLayer_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SGTileLayer_Example.modulemap"; sourceTree = "<group>"; };
+		EDA37E2B40193FD0ABD6FAA121548111 /* Southgis_BdWMTSLayerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Southgis_BdWMTSLayerOperation.m; sourceTree = "<group>"; };
+		EED6426174972B86F71077BD96BAC1A5 /* SGTileLayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SGTileLayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC851EA3065562D7F6BC9C66AC527683 /* Southgis_TiledServiceLayerInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Southgis_TiledServiceLayerInfo.m; sourceTree = "<group>"; };
+		FEBC9B3A40E61C95E3A6F1195C290869 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SouthgisTianDiTuWMTSLayerInfoDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		420138AE658F554DFAAB1BABD80DA342 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EEC44E836A47CD392367408FD67DE34 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B646C4AFDAB8EA051D8294DC4355AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4ED293C526C864D0E98E7A0084B24F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01DB10D29537F6442C854E11791A655A /* SGTileLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D636E95016A2F6FF4B155632AA2A2F3C /* Classes */,
+			);
+			path = SGTileLayer;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6F96B0E8853850773C14E5A5827F565B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91C446411508CA806F3FB4FA6B4882EF /* SGTileLayer */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				6F96B0E8853850773C14E5A5827F565B /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8C9C11E72DCC90ABAD8C3242315BDEF1 /* Products */,
+				C41017171AF0BA61276EFCE91A66E0FE /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8A17EF546A25C0ADFAB3ACD20B1E2DBB /* Pods-SGTileLayer_Example */ = {
+			isa = PBXGroup;
+			children = (
+				730F5C6153DF4D571A508F62169B4947 /* Info.plist */,
+				EB5707EF6749B8150AA5FC5DE2B34D3E /* Pods-SGTileLayer_Example.modulemap */,
+				47C59AA90D79B4DB970F0651D281EDFE /* Pods-SGTileLayer_Example-acknowledgements.markdown */,
+				B49B2F5324B1BCB6EF6BA5270F5C98A1 /* Pods-SGTileLayer_Example-acknowledgements.plist */,
+				83BA367638AFE73BC12061CC3F3612D9 /* Pods-SGTileLayer_Example-dummy.m */,
+				C43BE40599D7CC3A8B1DE55DD99AA3CA /* Pods-SGTileLayer_Example-frameworks.sh */,
+				B6E52B712BA15F76AA3ABC47BBD1BD8C /* Pods-SGTileLayer_Example-resources.sh */,
+				4D0162505F4B38F117C4C37DA317A064 /* Pods-SGTileLayer_Example-umbrella.h */,
+				26418B58531B60CEDB49AC91A55FBC51 /* Pods-SGTileLayer_Example.debug.xcconfig */,
+				B5AD1F417C7E8935AEDAD24D8C4D584C /* Pods-SGTileLayer_Example.release.xcconfig */,
+			);
+			name = "Pods-SGTileLayer_Example";
+			path = "Target Support Files/Pods-SGTileLayer_Example";
+			sourceTree = "<group>";
+		};
+		8C9C11E72DCC90ABAD8C3242315BDEF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDC9F02FB58DB884EDEA20DB4448A969 /* Pods_SGTileLayer_Example.framework */,
+				EED6426174972B86F71077BD96BAC1A5 /* SGTileLayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91C446411508CA806F3FB4FA6B4882EF /* SGTileLayer */ = {
+			isa = PBXGroup;
+			children = (
+				01DB10D29537F6442C854E11791A655A /* SGTileLayer */,
+				BEAC64B9B758891B8E02F9BBB0BBE405 /* Support Files */,
+			);
+			name = SGTileLayer;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A4BDC700348020DE4671BAACBABB8FD7 /* TdtTile */ = {
+			isa = PBXGroup;
+			children = (
+				46EDEF6A929CE2752516F77B8CA294F1 /* Southgis_WMTSLayerOperation.h */,
+				AF561FD0D21E701D02DB601A56C39158 /* Southgis_WMTSLayerOperation.m */,
+				7686518BA185A794E9CD9AE915C53A8D /* SouthgisTdt_LayerInfo.h */,
+				B8FE0A07E06F32372ADC65FEF01402CE /* SouthgisTdt_LayerInfo.m */,
+				2631B0044D4DDC4F438CF04D3C257FB1 /* SouthgisTdt_TileLayer.h */,
+				C58E55AC83D8AD6472FF31388DC104CD /* SouthgisTdt_TileLayer.m */,
+				7F1008401562B9BB760A6851AF776413 /* SouthgisTdtType.h */,
+				76E9FD3035D1C452204475B9BA1278FA /* SouthgisTdtType.m */,
+				7E9FE33AEE6DFBE3832C1610A301DFEF /* SouthgisTianDiTuWMTSLayerInfoDelegate.h */,
+				FEBC9B3A40E61C95E3A6F1195C290869 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m */,
+			);
+			path = TdtTile;
+			sourceTree = "<group>";
+		};
+		A9F7FDF3CA6FEA6CCA309B89FAECC307 /* BdTile */ = {
+			isa = PBXGroup;
+			children = (
+				26F85EC2CD513D4C0C0FA9F8CDF32DF8 /* Southgis_BdWMTSLayerInfoDelegate.h */,
+				C2F56C6CC93F2C30E641DE826A2BA38C /* Southgis_BdWMTSLayerInfoDelegate.m */,
+				5D030EBAF76B0AEECF06CB7A2EB405C0 /* Southgis_BdWMTSLayerOperation.h */,
+				EDA37E2B40193FD0ABD6FAA121548111 /* Southgis_BdWMTSLayerOperation.m */,
+				A7AE4F7A2B2799848507C839D5C83C22 /* SouthgisBdWMTSLayer.h */,
+				67CD5BCD31F1BC517F96FA8C4431F8DF /* SouthgisBdWMTSLayer.m */,
+			);
+			path = BdTile;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEAC64B9B758891B8E02F9BBB0BBE405 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD3B2052219A8793233B0BAEAC9709E9 /* Info.plist */,
+				36CD997ADED8073E1F67658E0F942792 /* SGTileLayer.modulemap */,
+				E079387BDD93AA05FE70DCC9CEB384E2 /* SGTileLayer.xcconfig */,
+				CA5DC94EC4A076305F24A811EB714469 /* SGTileLayer-dummy.m */,
+				2A690992307D80DB83548333EECD5227 /* SGTileLayer-prefix.pch */,
+				4853B237E9BE5C445C67A69A5FA91304 /* SGTileLayer-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SGTileLayer";
+			sourceTree = "<group>";
+		};
+		C1200E3D7F285705AFBAAA64E0F7E132 /* SGSWMTS */ = {
+			isa = PBXGroup;
+			children = (
+				13D03E83AF2698585A614751DA22D0BB /* NSDictionary+YYAdd.h */,
+				8306DDC90AD5E6624512B055F5CA8405 /* NSDictionary+YYAdd.m */,
+				11BAF5B7316C77B5D5D1C04E36D4EA87 /* SGSWMTSInfo.h */,
+				46819643E359706DA8EAD9F023DF721C /* SGSWMTSInfo.m */,
+				6EE8234770A27246CBB63DC6EE6D562E /* SGSWMTSLayer.h */,
+				0068CB196C61FB13331593BF265BCB6B /* SGSWMTSLayer.m */,
+				B166BA1A01C7911468FBE8332B0D3DA1 /* SGSWMTSLayerInfo.h */,
+				CC44E64013A532F3B84F4D50CDFD946D /* SGSWMTSLayerInfo.m */,
+			);
+			path = SGSWMTS;
+			sourceTree = "<group>";
+		};
+		C41017171AF0BA61276EFCE91A66E0FE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A17EF546A25C0ADFAB3ACD20B1E2DBB /* Pods-SGTileLayer_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D636E95016A2F6FF4B155632AA2A2F3C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7FB87E3EB4BE9B84AA660B88C10722B6 /* SGTileLayerHeader.h */,
+				494236FA985675D55A51703AD96BD6CF /* SGTileLayerUtil.h */,
+				D497FB524BE77F60764CFBAF2DD86790 /* SGTileLayerUtil.m */,
+				76AFD54124C9F6F575C4763A59DCAB53 /* SouthgisBaseTiledServiceLayer.h */,
+				9D43C36207CF017A7EEADD118079A467 /* SouthgisBaseTiledServiceLayer.m */,
+				03604D2746F0D26A42F4077AFDB35CFE /* SouthgisTiledMapHelper.h */,
+				A1A45BE47BC70706AD10C155E0D74F37 /* SouthgisTiledMapHelper.m */,
+				A9F7FDF3CA6FEA6CCA309B89FAECC307 /* BdTile */,
+				DD48C9DC209136BA0A0B840A81E0E644 /* CustomTile */,
+				C1200E3D7F285705AFBAAA64E0F7E132 /* SGSWMTS */,
+				A4BDC700348020DE4671BAACBABB8FD7 /* TdtTile */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DD48C9DC209136BA0A0B840A81E0E644 /* CustomTile */ = {
+			isa = PBXGroup;
+			children = (
+				E580FC997DC0D6414DB9785A5A9B51EB /* Southgis_TiledServiceLayer.h */,
+				535C2D0ED2186DB66A3337ABAE1113FA /* Southgis_TiledServiceLayer.m */,
+				95E48D0A34F5B8001AC7501BDB5FA6B0 /* Southgis_TiledServiceLayerInfo.h */,
+				FC851EA3065562D7F6BC9C66AC527683 /* Southgis_TiledServiceLayerInfo.m */,
+				3CA9E294E70A957BAE08A43CDD994153 /* Southgis_TiledServiceLayerInfoOperation.h */,
+				044EDF007783DA1B209DCD328CF4C05B /* Southgis_TiledServiceLayerInfoOperation.m */,
+				9A81D97AB756A4384CB8E6B1425D03F1 /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h */,
+				4536CCA57EEFCB182E2ED33D80E56B0B /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m */,
+				1FB5A4B3DA23D01E4054518FA0DE0416 /* Southigs_TiledServiceLayerOperation.h */,
+				618E77CF3B1450B4D4A3E574661563B1 /* Southigs_TiledServiceLayerOperation.m */,
+			);
+			path = CustomTile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BD414BA41B9BB4A255254CC62EF1CAC3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF62007EE19EC27BC07543D1587B7819 /* NSDictionary+YYAdd.h in Headers */,
+				19975C3B920AE9762F79E2C4927AEC7E /* SGSWMTSInfo.h in Headers */,
+				95E6F08C31B2C31BDD5A0D6C1D2C9EED /* SGSWMTSLayer.h in Headers */,
+				0B2E353FA0E49468BAEB5D2F716417E5 /* SGSWMTSLayerInfo.h in Headers */,
+				8FE95C38BBBA6A2065D5B302C55E8001 /* SGTileLayer-umbrella.h in Headers */,
+				DDF12548754D9C7335C5CD5871C37512 /* SGTileLayerHeader.h in Headers */,
+				47A68D79A4179EDD9D0579820D624A32 /* SGTileLayerUtil.h in Headers */,
+				FA570B39AD60B055BC79A159CF2124DA /* Southgis_BdWMTSLayerInfoDelegate.h in Headers */,
+				B62F430DCBEB885EE5DD1F319ACE644A /* Southgis_BdWMTSLayerOperation.h in Headers */,
+				D4F5F6E72065D9C994BA3E041CAF282C /* Southgis_TiledServiceLayer.h in Headers */,
+				229330CF62BE9F3A2F4D4E37828B44D6 /* Southgis_TiledServiceLayerInfo.h in Headers */,
+				60DD2DB55D15BE09D59C71C78FD2DEC7 /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h in Headers */,
+				676A57511DE9F1928B712C007C0530B1 /* Southgis_TiledServiceLayerInfoOperation.h in Headers */,
+				4F97D8BB756217847E526A6362756FB3 /* Southgis_WMTSLayerOperation.h in Headers */,
+				BBEF4D1682B7EF80FEC5CF4E331BDCF5 /* SouthgisBaseTiledServiceLayer.h in Headers */,
+				D0C2094BA82897B32C237A5A062FD4A7 /* SouthgisBdWMTSLayer.h in Headers */,
+				36DDB29D40EBE0210BA46BA62DC4BD3A /* SouthgisTdt_LayerInfo.h in Headers */,
+				3AA16B8890BD912FF2F8B41A120C05C9 /* SouthgisTdt_TileLayer.h in Headers */,
+				E50AE013F0B73B174C463448543800CD /* SouthgisTdtType.h in Headers */,
+				5BD7492822C9E42B0C2734B7023E6EFE /* SouthgisTianDiTuWMTSLayerInfoDelegate.h in Headers */,
+				24FAB36160C229BC077A8995134D1B07 /* SouthgisTiledMapHelper.h in Headers */,
+				6FFE616CD8F6B09691138D285D3CFF0E /* Southigs_TiledServiceLayerOperation.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9E7AD19F89E779DB3B105EB764E0F1F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0BFD4705514D1186AE071EABD70B460 /* Pods-SGTileLayer_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1FF12C0D6948820A5371EF6D7BD87F05 /* SGTileLayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C03A77FBD6566ED41A86B22D1FCCD170 /* Build configuration list for PBXNativeTarget "SGTileLayer" */;
+			buildPhases = (
+				8BA9650C6572CF3662E6F9CF569797E1 /* Sources */,
+				94B646C4AFDAB8EA051D8294DC4355AA /* Frameworks */,
+				BD414BA41B9BB4A255254CC62EF1CAC3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SGTileLayer;
+			productName = SGTileLayer;
+			productReference = EED6426174972B86F71077BD96BAC1A5 /* SGTileLayer.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		572EBC10B4202E2188B40285DBC9C159 /* Pods-SGTileLayer_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 593D4315E998D0EB2C2712447CFAA99A /* Build configuration list for PBXNativeTarget "Pods-SGTileLayer_Example" */;
+			buildPhases = (
+				EEB297BEEE6C4D83FCA4993AEBD621CE /* Sources */,
+				420138AE658F554DFAAB1BABD80DA342 /* Frameworks */,
+				F9E7AD19F89E779DB3B105EB764E0F1F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89D2A3D754EA6D71E6A73C778CC32DDE /* PBXTargetDependency */,
+			);
+			name = "Pods-SGTileLayer_Example";
+			productName = "Pods-SGTileLayer_Example";
+			productReference = DDC9F02FB58DB884EDEA20DB4448A969 /* Pods_SGTileLayer_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8C9C11E72DCC90ABAD8C3242315BDEF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				572EBC10B4202E2188B40285DBC9C159 /* Pods-SGTileLayer_Example */,
+				1FF12C0D6948820A5371EF6D7BD87F05 /* SGTileLayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8BA9650C6572CF3662E6F9CF569797E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4036A3B5A77E2D6A60E40E3E6619488B /* NSDictionary+YYAdd.m in Sources */,
+				EBFA45ED534A0EA35B3B7A6712A0FD25 /* SGSWMTSInfo.m in Sources */,
+				6B84F643A346707EAD669F0EC593A744 /* SGSWMTSLayer.m in Sources */,
+				ADF489BAD94FA9183388601F2B5D2706 /* SGSWMTSLayerInfo.m in Sources */,
+				D29896D092E7B1D2698A2AA8EC125161 /* SGTileLayer-dummy.m in Sources */,
+				B717541E39339D9779B488B145E5CA7D /* SGTileLayerUtil.m in Sources */,
+				B842AD01A0E9CED42960ACA3AFC70105 /* Southgis_BdWMTSLayerInfoDelegate.m in Sources */,
+				4FA063A17C3294A7FC4F5010108CF872 /* Southgis_BdWMTSLayerOperation.m in Sources */,
+				24D9F27699971474C4B6C3AF98562B61 /* Southgis_TiledServiceLayer.m in Sources */,
+				FA1EC2AFCB5726C9BCF46E4D29731898 /* Southgis_TiledServiceLayerInfo.m in Sources */,
+				A0094C4F086FC901DFF1539BEEDB57BE /* Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.m in Sources */,
+				E69589EBA9E321B6BF0EAAE391AD9D15 /* Southgis_TiledServiceLayerInfoOperation.m in Sources */,
+				F7067D21F25F6243B55F39D7D7A256D4 /* Southgis_WMTSLayerOperation.m in Sources */,
+				625B75891FA3C7BD78321695DCF892D0 /* SouthgisBaseTiledServiceLayer.m in Sources */,
+				A10AAF3792E42EE67546B7A8FD7DA40F /* SouthgisBdWMTSLayer.m in Sources */,
+				1AB1382FD682E656DA0BD17446840558 /* SouthgisTdt_LayerInfo.m in Sources */,
+				A610C156CDFCE7FD0B51CCD561BAA43E /* SouthgisTdt_TileLayer.m in Sources */,
+				208B79040B790CE4C1874A45A2CCA08B /* SouthgisTdtType.m in Sources */,
+				C1A159F47494058A3F2C44A13511BA83 /* SouthgisTianDiTuWMTSLayerInfoDelegate.m in Sources */,
+				691F43A49F3B1E1B77AB61144B66DBA8 /* SouthgisTiledMapHelper.m in Sources */,
+				1170831244B9B6D009BEAF0C8EB999C6 /* Southigs_TiledServiceLayerOperation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEB297BEEE6C4D83FCA4993AEBD621CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FDDFF96A36248D938C23FF4086293A1 /* Pods-SGTileLayer_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89D2A3D754EA6D71E6A73C778CC32DDE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SGTileLayer;
+			target = 1FF12C0D6948820A5371EF6D7BD87F05 /* SGTileLayer */;
+			targetProxy = F7CCC955E12BC31D3D73826FCE1E8843 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A75BBCD9129E384E3A95539A0BC4D0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5AD1F417C7E8935AEDAD24D8C4D584C /* Pods-SGTileLayer_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGTileLayer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGTileLayer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		93AADFAF159F343BC055FF47F0AFBA1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E079387BDD93AA05FE70DCC9CEB384E2 /* SGTileLayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SGTileLayer/SGTileLayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SGTileLayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SGTileLayer/SGTileLayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SGTileLayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B59E97D97A01024DBBEFDC7DFB0B1CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26418B58531B60CEDB49AC91A55FBC51 /* Pods-SGTileLayer_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SGTileLayer_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SGTileLayer_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		DF630B5A1E8F7617A8E642B6C8F91997 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E079387BDD93AA05FE70DCC9CEB384E2 /* SGTileLayer.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SGTileLayer/SGTileLayer-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SGTileLayer/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SGTileLayer/SGTileLayer.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SGTileLayer;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		593D4315E998D0EB2C2712447CFAA99A /* Build configuration list for PBXNativeTarget "Pods-SGTileLayer_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B59E97D97A01024DBBEFDC7DFB0B1CD3 /* Debug */,
+				8A75BBCD9129E384E3A95539A0BC4D0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C03A77FBD6566ED41A86B22D1FCCD170 /* Build configuration list for PBXNativeTarget "SGTileLayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF630B5A1E8F7617A8E642B6C8F91997 /* Debug */,
+				93AADFAF159F343BC055FF47F0AFBA1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,1 +1,0 @@
-../../../../../SGTileLayer/Classes/BdTile/Southgis_BdWMTSLayerOperation.h

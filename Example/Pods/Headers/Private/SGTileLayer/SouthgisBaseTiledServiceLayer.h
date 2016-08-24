@@ -1,1 +1,0 @@
-../../../../../SGTileLayer/Classes/SouthgisBaseTiledServiceLayer.h

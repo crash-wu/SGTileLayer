@@ -1,5 +1,5 @@
 PODS:
-  - SGTileLayer (0.1.0)
+  - SGTileLayer (0.0.2)
 
 DEPENDENCIES:
   - SGTileLayer (from `../SGTileLayer.podspec`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: ../SGTileLayer.podspec
 
 SPEC CHECKSUMS:
-  SGTileLayer: 9302060222320fff7f4c3509d2e0dbdc0a04570c
+  SGTileLayer: e42c7f7e79d71c656066eb771b37c8aea3697279
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 8a60ccd11406ecc137978f396d09213bc28b6f84
+
+COCOAPODS: 1.0.1

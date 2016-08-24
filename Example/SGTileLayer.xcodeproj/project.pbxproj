@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		130F112E55499EAEA70E67D1 /* Pods_SGTileLayer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 178A642679AC80F529B21E9C /* Pods_SGTileLayer_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -20,6 +19,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6BDCAE49D66640A0BC02A6E3 /* Pods_SGTileLayer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF28CB56625BE0E87085F0CF /* Pods_SGTileLayer_Example.framework */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9831DE3C1D6BF2AF0035D8F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE3B1D6BF2AF0035D8F0 /* MainViewController.m */; };
 		9831DE3F1D6BF4EC0035D8F0 /* TdtMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE3E1D6BF4EC0035D8F0 /* TdtMapViewController.m */; };
@@ -37,9 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		178A642679AC80F529B21E9C /* Pods_SGTileLayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTileLayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C541A32BB7D1F6E58AB5312 /* Pods-SGTileLayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTileLayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4E521DE35B05FCDA993CBF50 /* Pods-SGTileLayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTileLayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4AE6C91DCF0DAC82E6C24F08 /* Pods-SGTileLayer_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTileLayer_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		567D888F203C3212DB099BC3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* SGTileLayer_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SGTileLayer_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -67,6 +65,8 @@
 		9831DE7F1D6C30380035D8F0 /* BDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDMapViewController.h; sourceTree = "<group>"; };
 		9831DE801D6C30380035D8F0 /* BDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDMapViewController.m; sourceTree = "<group>"; };
 		A2700C65A873579B0E2C1A82 /* SGTileLayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGTileLayer.podspec; path = ../SGTileLayer.podspec; sourceTree = "<group>"; };
+		B95A473944C3D58602F0FDE9 /* Pods-SGTileLayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTileLayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FF28CB56625BE0E87085F0CF /* Pods_SGTileLayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTileLayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				130F112E55499EAEA70E67D1 /* Pods_SGTileLayer_Example.framework in Frameworks */,
+				6BDCAE49D66640A0BC02A6E3 /* Pods_SGTileLayer_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,7 +102,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				E688BBEA2D617BFA63395AB9 /* Pods */,
+				B0B25AF8C435C7866DA10F03 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,7 +122,7 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				178A642679AC80F529B21E9C /* Pods_SGTileLayer_Example.framework */,
+				FF28CB56625BE0E87085F0CF /* Pods_SGTileLayer_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,11 +186,11 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		E688BBEA2D617BFA63395AB9 /* Pods */ = {
+		B0B25AF8C435C7866DA10F03 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4E521DE35B05FCDA993CBF50 /* Pods-SGTileLayer_Example.debug.xcconfig */,
-				3C541A32BB7D1F6E58AB5312 /* Pods-SGTileLayer_Example.release.xcconfig */,
+				4AE6C91DCF0DAC82E6C24F08 /* Pods-SGTileLayer_Example.debug.xcconfig */,
+				B95A473944C3D58602F0FDE9 /* Pods-SGTileLayer_Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -202,12 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "SGTileLayer_Example" */;
 			buildPhases = (
-				A5461E10B336B4575E4C61A9 /* Check Pods Manifest.lock */,
+				0378A646F2233C15DB1A975E /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				70A1E77D21A4B7D53D8AF16C /* Embed Pods Frameworks */,
-				433F678B2843B0DDD14A4D44 /* Copy Pods Resources */,
+				916AA43C5C3EAE47966B7C06 /* [CP] Embed Pods Frameworks */,
+				86689C681A5878D9D5C4362F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -292,14 +292,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		433F678B2843B0DDD14A4D44 /* Copy Pods Resources */ = {
+		0378A646F2233C15DB1A975E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		86689C681A5878D9D5C4362F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,34 +322,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		70A1E77D21A4B7D53D8AF16C /* Embed Pods Frameworks */ = {
+		916AA43C5C3EAE47966B7C06 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A5461E10B336B4575E4C61A9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -465,7 +465,7 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E521DE35B05FCDA993CBF50 /* Pods-SGTileLayer_Example.debug.xcconfig */;
+			baseConfigurationReference = 4AE6C91DCF0DAC82E6C24F08 /* Pods-SGTileLayer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -493,7 +493,7 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C541A32BB7D1F6E58AB5312 /* Pods-SGTileLayer_Example.release.xcconfig */;
+			baseConfigurationReference = B95A473944C3D58602F0FDE9 /* Pods-SGTileLayer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
