@@ -75,4 +75,24 @@
 -(NSInteger)currentLevel:(nonnull SouthgisTdt_TileLayer *)tdtLayer;
 
 
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 16:08:49
+ *
+ *  @brief  将地图移到中国视图范围(天地图 墨卡托坐标系)
+ *
+ *  @param mapView 地图
+ */
+-(void) zoomToChineseWebspatialReference:(nonnull AGSMapView *) mapView;
+
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 16:08:28
+ *
+ *  @brief 将地图移到中国视图范围(天地图国家坐标系)
+ *
+ *  @param mapView 地图
+ */
+-(void) zoomToChineseEnvelopeCGCS2000:(nonnull AGSMapView *)mapView;
+
+
 @end

@@ -156,4 +156,33 @@
     return [tdtLayer currentLevel];
 }
 
+
+
+
+
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 16:08:49
+ *
+ *  @brief  将地图移到中国视图范围(天地图 墨卡托坐标系)
+ *
+ *  @param mapView 地图
+ */
+-(void) zoomToChineseWebspatialReference:(nonnull AGSMapView *) mapView{
+    
+    [mapView zoomToEnvelope:[[AGSEnvelope alloc] initWithXmin:7800000.0 ymin:44000.0 xmax:15600000.0 ymax:7500000.0 spatialReference:mapView.spatialReference ] animated: true];
+}
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-08-26 16:08:28
+ *
+ *  @brief 将地图移到中国视图范围(天地图国家坐标系)
+ *
+ *  @param mapView 地图
+ */
+-(void) zoomToChineseEnvelopeCGCS2000:(nonnull AGSMapView *)mapView{
+    
+    [mapView zoomToEnvelope:[[AGSEnvelope alloc] initWithXmin:80.76016586869 ymin:8.37639403682149 xmax:145.522396132932 ymax:52.9004273434877 spatialReference:mapView] animated:true];
+}
+
 @end
