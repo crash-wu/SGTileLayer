@@ -30,14 +30,19 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SGTileLayer/Classes/**/*.{h,m}','SGTileLayer/Classes/*.{h,m}'
-  
+
+#s.public_header_files = 'SGTileLayer/Classes/SGTileLayerHeader.h'
+   # s.public_header_files = 'Pod/Classes/**/*.h'
 
     s.xcconfig = {
 
-    "FRAMEWORK_SEARCH_PATHS" => "$(HOME)/Library/SDKs/ArcGIS/iOS" ,
-    "OTHER_LDFLAGS"  => '-lObjC -framework ArcGIS -l c++',
+    "FRAMEWORK_SEARCH_PATHS" => "$(HOME)/Library/SDKs/ArcGIS/iOS",
+
+    "OTHER_LDFLAGS"  => '-ObjC -framework ArcGIS -l c++',
+
 
     'ENABLE_BITCODE' => 'NO',
+
     'CLANG_ENABLE_MODULES' => 'YES'
 
     }

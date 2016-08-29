@@ -7,7 +7,7 @@
 //
 
 #import "SouthgisBaseTiledServiceLayer.h"
-//#import "Southgis_WMTSLayerInfo.h"
+
 
 @class SouthgisTdt_LayerInfo;
 

@@ -1,4 +1,8 @@
+platform :ios,'8.0'
+
 use_frameworks!
+
+
 
 target 'SGTileLayer_Example' do
   pod 'SGTileLayer', :path => '../SGTileLayer.podspec'

@@ -13,6 +13,6 @@
 
 @interface TdtMapViewController : UIViewController
 
-@property(nullable ,strong,nonatomic) AGSMapView *mapView;
+@property(strong,nonatomic) AGSMapView *mapView;
 
 @end

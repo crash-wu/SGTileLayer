@@ -8,8 +8,6 @@
 
 #import "SGTileLayerUtil.h"
 
-
-
 @implementation SGTileLayerUtil
 
 

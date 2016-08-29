@@ -43,7 +43,7 @@
         NSInteger num = (self.tileKey.column + self.tileKey.row)% 8 + 1;
         
         NSString *baseUrl=[NSString stringWithFormat:@"http://online%ld.%map.bdimg.com/tile/?qt=tile&x=%ld&y=%ld&z=%ld",num,numx,numy,zoom];
-        NSLog(@"baseUrl=%@",baseUrl );
+        //NSLog(@"baseUrl=%@",baseUrl );
         
         NSURL* aURL = [NSURL URLWithString:baseUrl];
         self.imageData = [[NSData alloc] initWithContentsOfURL:aURL];

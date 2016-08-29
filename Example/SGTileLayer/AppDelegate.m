@@ -15,8 +15,17 @@
 {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen] bounds]];
-    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
     self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:[[MainViewController alloc]init]];
+    [self.window makeKeyAndVisible];
+    NSLog(NSHomeDirectory());
+//    NSMutableURLRequest *urlR = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://t0.tianditu.com/vec_c/wmts?service=wmts&request=gettile&version=1.0.0&layer=vec&format=tiles&tilematrixset=c&tilecol=106&tilerow=21&tilematrix=7"]];
+//    [urlR setValue:@"image/png" forHTTPHeaderField:@"Content-Type"];
+//    
+//    [[[NSURLSession sharedSession] dataTaskWithRequest:urlR completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+//        NSLog(@"%@", response);
+//    }] resume];
     
     return YES;
 }

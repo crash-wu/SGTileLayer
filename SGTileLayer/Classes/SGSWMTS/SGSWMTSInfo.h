@@ -6,16 +6,14 @@
 //  Copyright © 2016年 ArK. All rights reserved.
 //
 
-//#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "SGSWMTSLayerInfo.h"
+#import "SGSWMTSLayer.h"
 
-@class SGSWMTSLayerInfo;
-@class SGSWMTSLayer;
 @class AGSTileInfo;
 @protocol SGSWMTSInfoDelegate;
 
 extern const NSUInteger SGSWMTSDefaultDPI;
-
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -121,13 +119,26 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable SGSWMTSLayer*)wmtsLayerWithLayerInfo:(SGSWMTSLayerInfo*)layerInfo;
 
+/**
+ *  取消请求WMTS信息
+ */
+- (void)cancelRequest;
 
 /**
- *  WMTS的XML缓存数据路径
+ *  WMTS信息的XML缓存数据路径
+ *  路径：~/Library/Caches/com.southgis.iMobile.WMTS_Info/（URL的MD5值）
  *
- *  @return 缓存文件夹路径
+ *  @return XML缓存路径，当缓存目录获取失败或URL为空时返回nil
  */
-- (NSString *)cacheDocPath;
+- (nullable NSString *)cachePath;
+
+/**
+ *  WMTS信息的XML缓存目录
+ *  默认为：~/Library/Caches/com.southgis.iMobile.WMTS_Info
+ *
+ *  @return WMTS信息XML缓存目录，当缓存目录创建失败时返回nil
+ */
++ (nullable NSString *)wmtsInfoCacheDirectory;
 
 @end
 

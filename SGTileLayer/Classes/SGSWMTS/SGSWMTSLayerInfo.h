@@ -8,28 +8,30 @@
 
 #import <Foundation/Foundation.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 /**
  *  WMTS 图层信息，由 SGSWMTSInfo 获取
  */
 @interface SGSWMTSLayerInfo : NSObject
 
 /** GetTile 地址 */
-@property (nonatomic, strong) NSURL    *tileURL;
+@property (nullable, nonatomic, strong) NSURL *tileURL;
 
 /** 图层标识符 */
-@property (nonatomic, copy  ) NSString *layerIdentifier;
+@property (nullable, nonatomic, copy) NSString *layerIdentifier;
 
 /** 图层名 */
-@property (nonatomic, copy  ) NSString *layerName;
+@property (nullable, nonatomic, copy) NSString *layerName;
 
 /** 图层样式 */
-@property (nonatomic, copy  ) NSString *styleIdentifier;
+@property (nonatomic, copy) NSString *styleIdentifier;
 
 /** 图层内容格式 */
-@property (nonatomic, copy  ) NSString *format;
+@property (nonatomic, copy) NSString *format;
 
 /** 切片矩阵集 */
-@property (nonatomic, copy  ) NSString *tileMatrixIdentifier;
+@property (nullable, nonatomic, copy) NSString *tileMatrixIdentifier;
 
 /** 初始四角坐标 */
 @property (nonatomic, assign) double initialXMin;
@@ -38,3 +40,5 @@
 @property (nonatomic, assign) double initialYMax;
 
 @end
+
+NS_ASSUME_NONNULL_END

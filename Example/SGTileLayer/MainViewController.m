@@ -53,6 +53,9 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if(indexPath.row ==0){
+//        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+//        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TDT"];
+//        [self.navigationController pushViewController:vc animated:true];
         [self.navigationController pushViewController:[[TdtMapViewController alloc]init] animated:true];
     }else{
         

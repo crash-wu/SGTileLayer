@@ -203,8 +203,14 @@ const double kMaxYByMercator = 20037508.3427892;
     return wmtsLayer;
 }
 
-- (NSString *)cacheDocPath {
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"WMTS_Info"];
+- (void)cancelRequest {
+    if ((_task != nil) && (_task.state == NSURLSessionTaskStateRunning || _task.state == NSURLSessionTaskStateSuspended)) {
+        [_task cancel];
+    }
+}
+
++ (NSString *)wmtsInfoCacheDirectory {
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"com.southgis.iMobile.WMTS_Info"];
     
     BOOL docExist = NO;
     [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&docExist];
@@ -216,25 +222,34 @@ const double kMaxYByMercator = 20037508.3427892;
         if (error) {
             return nil;
         }
+        
+        // 为文件上标签，不允许备份到iCloud和iTunes
+        NSURL *cacheURL = [NSURL fileURLWithPath:path];
+        [cacheURL setResourceValue:@(YES)
+                            forKey:NSURLIsExcludedFromBackupKey
+                             error:nil];
     }
     
     return path;
 }
 
-#pragma mark - Private Methods
-
-- (NSData *)p_localXMLData {
-    NSString *cachePath = [self cacheDocPath];
+- (NSString *)cachePath {
+    if (_URL == nil) return nil;
+    
+    NSString *cachePath = [SGSWMTSInfo wmtsInfoCacheDirectory];
+    if (cachePath == nil) return nil;
     
     NSString *xmlCacheName = [self p_md5String:_URL.absoluteString];
     
-    if (xmlCacheName) {
-        cachePath = [cachePath stringByAppendingPathComponent:xmlCacheName];
-        
-        return [NSData dataWithContentsOfFile:cachePath];
-    }
+    return [cachePath stringByAppendingPathComponent:xmlCacheName];
+}
+
+#pragma mark - Private Methods
+
+- (NSData *)p_localXMLData {
+    NSString *cachePath = [self cachePath];
     
-    return nil;
+    return (cachePath != nil) ? [NSData dataWithContentsOfFile:cachePath] : nil;
 }
 
 - (BOOL)p_cacheTheXMLData:(NSData *)xmlData {
@@ -242,9 +257,8 @@ const double kMaxYByMercator = 20037508.3427892;
         return NO;
     }
     
-    NSString *cachePath = [self cacheDocPath];
-    NSString *xmlCacheName = [self p_md5String:_URL.absoluteString];
-    cachePath = [cachePath stringByAppendingPathComponent:xmlCacheName];
+    NSString *cachePath = [self cachePath];
+    if (cachePath == nil) return NO;
     
     return [xmlData writeToFile:cachePath atomically:YES];
 }

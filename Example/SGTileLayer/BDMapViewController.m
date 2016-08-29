@@ -8,6 +8,8 @@
 
 #import "BDMapViewController.h"
 #import <SGTileLayer/SGTileLayerHeader.h>
+//#import "SGTileLayerHeader.h"
+
 
 @interface BDMapViewController ()
 
@@ -28,6 +30,7 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     [[SGTileLayerUtil sharedInstance] loadBdTileLayer:self.mapView];
+
 }
 
 - (void)didReceiveMemoryWarning {

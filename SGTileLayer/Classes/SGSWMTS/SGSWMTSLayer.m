@@ -7,8 +7,7 @@
 //
 
 #import "SGSWMTSLayer.h"
-#include <CommonCrypto/CommonCrypto.h>
-
+#import <CommonCrypto/CommonCrypto.h>
 
 
 /** WMTS KVP 请求格式 */
@@ -100,19 +99,48 @@ static NSString *kRESTfulURLStringFormat = @"%@%@/%@/%@/%ld/%ld/.%@";
     [self layerDidLoad];
 }
 
-- (NSString *)cacheDocPath {
-    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"WMTS_Tile"];
+// 本地缓存路径
+- (NSString *)cachePath {
+    NSString *cachePath = [SGSWMTSLayer wmtsTileCacheDirectory];
+    cachePath = [cachePath stringByAppendingPathComponent:self.cacheDocName];
+    
+    BOOL docExist = NO;
+    [[NSFileManager defaultManager] fileExistsAtPath:cachePath isDirectory:&docExist];
+    
+    if (!docExist) {
+        NSError *error = nil;
+        [[NSFileManager defaultManager] createDirectoryAtPath:cachePath withIntermediateDirectories:YES attributes:nil error:&error];
+        
+        if (error) {
+            return nil;
+        }
+    }
+    
+    return cachePath;
+}
+
++ (NSString *)wmtsTileCacheDirectory {
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES).firstObject stringByAppendingPathComponent:@"com.southgis.iMobile.WMTS_Tile"];
     
     BOOL docExist = NO;
     [[NSFileManager defaultManager] fileExistsAtPath:path isDirectory:&docExist];
     
     if (!docExist) {
         NSError *error = nil;
-        [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:&error];
+        [[NSFileManager defaultManager] createDirectoryAtPath:path
+                                  withIntermediateDirectories:YES
+                                                   attributes:nil
+                                                        error:&error];
         
         if (error) {
             return nil;
         }
+        
+        // 为文件上标签，不允许备份到iCloud和iTunes
+        NSURL *cacheURL = [NSURL fileURLWithPath:path];
+        [cacheURL setResourceValue:@(YES)
+                            forKey:NSURLIsExcludedFromBackupKey
+                             error:nil];
     }
     
     return path;
@@ -204,7 +232,7 @@ static NSString *kRESTfulURLStringFormat = @"%@%@/%@/%@/%ld/%ld/.%@";
 
 // 获取本地切片数据
 - (void)p_localTileDataWithTileKey:(AGSTileKey *)tileKey callBack:(void(^)(NSData *tileData))handler {
-    NSString *cacheDocPath = [self p_cachePath];
+    NSString *cacheDocPath = [self cachePath];
     
     if (self.useCache && cacheDocPath != nil) {
         // 使用队列确保线程安全
@@ -236,7 +264,7 @@ static NSString *kRESTfulURLStringFormat = @"%@%@/%@/%@/%ld/%ld/.%@";
     
     // 异步串行执行缓存切片任务
     dispatch_async(_cacheQueue, ^{
-        NSString *cacheDocPath = [NSString stringWithFormat:@"%@/L%02lx/R%08lx", [weakSelf p_cachePath], (long)tileKey.level, (long)tileKey.row];
+        NSString *cacheDocPath = [NSString stringWithFormat:@"%@/L%02lx/R%08lx", [weakSelf cachePath], (long)tileKey.level, (long)tileKey.row];
         
         BOOL docExist = NO;
         [[NSFileManager defaultManager] fileExistsAtPath:cacheDocPath isDirectory:&docExist];
@@ -255,25 +283,6 @@ static NSString *kRESTfulURLStringFormat = @"%@%@/%@/%@/%ld/%ld/.%@";
     });
 }
 
-// 本地缓存路径
-- (NSString *)p_cachePath {
-    NSString *cachePath = [self cacheDocPath];
-    cachePath = [cachePath stringByAppendingPathComponent:self.cacheDocName];
-    
-    BOOL docExist = NO;
-    [[NSFileManager defaultManager] fileExistsAtPath:cachePath isDirectory:&docExist];
-    
-    if (!docExist) {
-        NSError *error = nil;
-        [[NSFileManager defaultManager] createDirectoryAtPath:cachePath withIntermediateDirectories:YES attributes:nil error:&error];
-        
-        if (error) {
-            return nil;
-        }
-    }
-    
-    return cachePath;
-}
 
 // 计算MD5值
 - (NSString *)p_md5String:(NSString *)str {

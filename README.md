@@ -113,6 +113,19 @@
     *  @return SGSWMTSInfo or nil
     */
     - (instancetype)initWithURLString:(NSString *)url tileDPI:(NSUInteger)dpi delegate:(id<SGSWMTSInfoDelegate>)delegate;
+    例如：
+    #pragma mark - SGSWMTSInfoDelegate
+    - (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
+        SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
+        if (layerInfo) {
+            SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
+            [_mapView addMapLayer:layer];
+
+            [layer loadWMTSTileAndUsingCache:YES];
+        } else {
+            NSLog(@"tuceng wei kong");
+        }
+    }
     
 
 ## Example

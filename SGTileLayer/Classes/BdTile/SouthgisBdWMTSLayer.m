@@ -13,13 +13,7 @@
 @implementation SouthgisBdWMTSLayer
 
 
-- (instancetype)initWithCachePath:(NSString *)cachePath{
-    
-    if (self = [super initWithCachePath:cachePath]) {
-        
-    }
-    return self;
-}
+
 
 /**
  *  @author crash         crash_wu@163.com   , 16-04-27 09:04:06
@@ -38,10 +32,7 @@
         /*get the currect layer info
          */
         _layerInfo = [[Southgis_BdWMTSLayerInfoDelegate alloc]getLayerInfo:wmtsLayerType];
-        
-//        if (![url isEqual:[NSNull null]]) {
-//            _layerInfo.url = url;
-//        }
+
         
         AGSSpatialReference* sr = [AGSSpatialReference spatialReferenceWithWKID:_layerInfo.srid];
         
@@ -60,9 +51,6 @@
     }
     
     return self;
-    
-
-    
 }
 
 
