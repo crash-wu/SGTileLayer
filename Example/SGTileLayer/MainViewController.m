@@ -9,6 +9,10 @@
 #import "MainViewController.h"
 #import "TdtMapViewController.h"
 #import "BDMapViewController.h"
+#import "SGWMTSViewController.h"
+#import "TileLayerViewController.h"
+#import "DDTileServicelayer.h"
+#import "KongbaiViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -34,7 +38,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return 2;
+    return 5;
 }
 
 
@@ -44,8 +48,14 @@
     
     if(indexPath.row ==0){
         cell.textLabel.text = @"天地图";
-    }else{
+    }else if(indexPath.row ==1){
         cell.textLabel.text = @"百度地图";
+    }else if (indexPath.row ==2){
+        cell.textLabel.text = @"SGSWMTS";
+    }else if(indexPath.row ==3){
+        cell.textLabel.text = @"TileLayer";
+    }else{
+        cell.textLabel.text = @"空白页";
     }
     return cell;
 }
@@ -53,13 +63,20 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     if(indexPath.row ==0){
-//        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
-//        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"TDT"];
-//        [self.navigationController pushViewController:vc animated:true];
-        [self.navigationController pushViewController:[[TdtMapViewController alloc]init] animated:true];
-    }else{
+
+        [self.navigationController pushViewController:[[TdtMapViewController alloc] init]animated:true];
+    }else if(indexPath.row == 1){
         
         [self.navigationController pushViewController:[[BDMapViewController alloc] init] animated:true];
+    }else if(indexPath.row ==2){
+        
+        [self.navigationController pushViewController:[[SGWMTSViewController alloc] init] animated:true];
+    }else if(indexPath.row == 3){
+        
+        [self.navigationController pushViewController:[[TileLayerViewController alloc] init] animated:true];
+    }else{
+        
+        [self.navigationController pushViewController:[[KongbaiViewController alloc] init] animated:true];
     }
 }
 

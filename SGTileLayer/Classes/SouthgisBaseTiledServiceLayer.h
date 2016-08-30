@@ -14,20 +14,23 @@
  * 切片基类
  */
 @interface SouthgisBaseTiledServiceLayer : AGSTiledLayer
-{
-    //切片信息
-    AGSTileInfo* _tileInfo;
-    //地图范围
-    AGSEnvelope* _fullEnvelope;
-    //单位
-    AGSUnits _units;
-    //线程队列
-    NSOperationQueue* _requestQueue;
-}
+
+
+@property (nonatomic, strong) NSOperationQueue *requestQueue;
 
 /**缓存路径，nil不缓存，否则缓存到该路径下**/
 @property(nonatomic,strong)NSString *cacheDocPath;
 
+
+@property(nonatomic,assign) AGSUnits units;
+
+//地图范围
+@property(nonatomic,strong ) AGSEnvelope *sgFullEnvelope;
+
+//切片信息
+@property(nonatomic,strong) AGSTileInfo  *sgTileInfo;
+
+@property(nonatomic,strong) AGSEnvelope *sgInitialEnvelope;
 
 /**
  * @author Jeremy, 16-03-29 17:03:20

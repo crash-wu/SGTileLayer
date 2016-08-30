@@ -1,4 +1,4 @@
-//
+
 //  SouthgisTiledServiceLayer.m
 //  RTLibrary-ios
 //
@@ -9,9 +9,9 @@
 #import "SouthgisBaseTiledServiceLayer.h"
 #import "SouthgisTiledMapHelper.h"
 
-NSString *const DataKey = @"data";
-NSString *const FullEnvelopKey = @"fullEnvelop";
-NSString *const TileInfoKey = @"tileInfo";
+NSString *const DataKey = @"datas";
+NSString *const FullEnvelopKey = @"fullEnvelops";
+NSString *const TileInfoKey = @"tileInfos";
 
 @interface SouthgisBaseTiledServiceLayer()
 {
@@ -24,27 +24,34 @@ NSString *const TileInfoKey = @"tileInfo";
 
 @implementation SouthgisBaseTiledServiceLayer
 
+
 -(AGSUnits)units{
     return _units;
 }
 
 /**********重写父类方法***********/
 -(AGSSpatialReference *)spatialReference{
-    return _fullEnvelope.spatialReference;
+    
+    return _sgFullEnvelope.spatialReference;
 }
 
 -(AGSEnvelope *)fullEnvelope{
-    return _fullEnvelope;
+    
+    return _sgFullEnvelope;
+}
+
+
+-(AGSTileInfo *)tileInfo{
+    
+    return _sgTileInfo;
 }
 
 -(AGSEnvelope *)initialEnvelope{
-    //Assuming our initial extent is the same as the full extent
-    return _fullEnvelope;
+    return _sgInitialEnvelope;
 }
 
--(AGSTileInfo*) tileInfo{
-    return _tileInfo;
-}
+
+
 
 - (NSInteger)currentLevel{
     if(_tilekey != nil){
@@ -64,8 +71,8 @@ NSString *const TileInfoKey = @"tileInfo";
             [SouthgisTiledMapHelper recordTiledCachePath:self.cacheDocPath withKey:[self tiledCachePathKey]];
         }
         
-        _requestQueue = [[NSOperationQueue alloc] init];
-        [_requestQueue setMaxConcurrentOperationCount:16];
+        self.requestQueue = [[NSOperationQueue alloc] init];
+        [self.requestQueue setMaxConcurrentOperationCount:16];
         
         _cacheQueue = dispatch_queue_create("com.southgis.iMobile.TiledService.cacheQueue", DISPATCH_QUEUE_SERIAL);
     }
@@ -74,16 +81,17 @@ NSString *const TileInfoKey = @"tileInfo";
 }
 
 - (void)setTileData:(NSData *)data forKey:(AGSTileKey *)tilekey cacheTile:(BOOL)cacheTile {
-
+    
     // 如果存在路径就缓存
     if (cacheTile && self.cacheDocPath != NULL) {
         [self cacheTiledDataInLocalData:data forKey:tilekey];
     }
     
-    [super setTileData:data forKey:tilekey];
+     [super setTileData:data forKey:tilekey];
 
-    //    self.tilekey = tilekey;
 }
+
+
 
 
 /**
@@ -134,7 +142,6 @@ NSString *const TileInfoKey = @"tileInfo";
         return nil;
     }
     
-    
     NSString *filePath = [self getPathByTileKey:tilekey];
     
     NSMutableData *mData = [[NSMutableData alloc]initWithContentsOfFile:filePath];
@@ -147,14 +154,14 @@ NSString *const TileInfoKey = @"tileInfo";
    
     NSData *data = [unarchiver decodeObjectForKey:DataKey];
     
-    if (_tileInfo == nil) {
+    if (self.tileInfo == nil) {
         NSDictionary *tileInfoDic = [unarchiver decodeObjectForKey:TileInfoKey];
-        _tileInfo = [[AGSTileInfo alloc]initWithJSON:tileInfoDic];
+        self.sgTileInfo = [[AGSTileInfo alloc]initWithJSON:tileInfoDic];
     }
     
-    if (_fullEnvelope == nil) {
+    if (self.fullEnvelope == nil) {
          NSDictionary *fullEnvelopDic = [unarchiver decodeObjectForKey:FullEnvelopKey];
-        _fullEnvelope = [[AGSEnvelope alloc]initWithJSON:fullEnvelopDic];
+        self.sgFullEnvelope = [[AGSEnvelope alloc]initWithJSON:fullEnvelopDic];
     }
    
     return data;

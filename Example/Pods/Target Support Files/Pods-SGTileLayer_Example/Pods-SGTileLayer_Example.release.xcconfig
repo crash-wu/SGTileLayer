@@ -3,6 +3,7 @@ ENABLE_BITCODE = NO
 FRAMEWORK_SEARCH_PATHS = $(inherited) $(HOME)/Library/SDKs/ArcGIS/iOS "$PODS_CONFIGURATION_BUILD_DIR/SGTileLayer"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+MACH_O_TYPE = staticlib
 OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/SGTileLayer/SGTileLayer.framework/Headers"
 OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -framework "ArcGIS" -framework "SGTileLayer"
 PODS_BUILD_DIR = $BUILD_DIR

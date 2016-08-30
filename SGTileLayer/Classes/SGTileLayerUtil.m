@@ -39,6 +39,7 @@
  */
 -(void)loadTdtTileLayer:(WMTSLayerTypes) tdtLayerType  andMapView :(nonnull AGSMapView * ) mapView{
     
+    
     [mapView removeMapLayerWithName:@"tiandity_layer"];
     [mapView removeMapLayerWithName:@"tiandity_layer_annotation"];
     NSError *error;
@@ -48,6 +49,7 @@
     if(layer != nil){
         
         [mapView addMapLayer:layer withName:@"tiandity_layer"];
+
     }
 
     WMTSLayerTypes  annotation = WMTS_VECTOR_ANNOTATION_CHINESE_2000 ;
@@ -89,7 +91,7 @@
 
     SouthgisTdt_TileLayer *annotationLayer = [[SouthgisTdt_TileLayer alloc]initWithLayerType:annotation error:&error];
     if (annotationLayer != nil){
-        
+
         [mapView addMapLayer:annotationLayer withName:@"tiandity_layer_annotation"];
     }
     

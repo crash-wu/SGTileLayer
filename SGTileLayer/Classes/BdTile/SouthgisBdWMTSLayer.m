@@ -36,16 +36,16 @@
         
         AGSSpatialReference* sr = [AGSSpatialReference spatialReferenceWithWKID:_layerInfo.srid];
         
-        _fullEnvelope = [[AGSEnvelope alloc] initWithXmin:_layerInfo.xMin
+        self.sgFullEnvelope = [[AGSEnvelope alloc] initWithXmin:_layerInfo.xMin
                                                      ymin:_layerInfo.yMin
                                                      xmax:_layerInfo.xMax
                                                      ymax:_layerInfo.yMax
                                          spatialReference:sr];
         
-        _tileInfo = [[AGSTileInfo alloc]initWithDpi:_layerInfo.dpi
+        self.sgTileInfo = [[AGSTileInfo alloc]initWithDpi:_layerInfo.dpi
                                              format:@"PNG" lods:_layerInfo.lods origin:_layerInfo.origin spatialReference:self.spatialReference tileSize:CGSizeMake(_layerInfo.tileWidth,_layerInfo.tileHeight)];
         
-        [_tileInfo computeTileBounds:self.fullEnvelope];
+        [self.sgTileInfo computeTileBounds:self.sgFullEnvelope];
         
         [super layerDidLoad];
     }
@@ -71,7 +71,7 @@
         else{
             Southgis_BdWMTSLayerOperation *operation = [[Southgis_BdWMTSLayerOperation alloc]initWithTileKey:key TiledLayerInfo:_layerInfo target:weakSelf action:@selector(didFinishOperation:)];
             
-            [_requestQueue addOperation:operation];
+            [weakSelf.requestQueue addOperation:operation];
         }
     }];
     

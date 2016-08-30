@@ -8,21 +8,15 @@
 
 #import "TdtMapViewController.h"
 #import <SGTileLayer/SGTileLayerHeader.h>
-//#import <SGTileLayer/Southgis_TiledServiceLayer.h>
 
-//#import "SGTileLayerHeader.h"
 
-@interface TdtMapViewController () <AGSMapViewLayerDelegate, SGSWMTSInfoDelegate>
-//@property (weak, nonatomic) IBOutlet AGSMapView *mapView;
+@interface TdtMapViewController () <AGSMapViewLayerDelegate>
 
-@property (strong) SGSWMTSInfo *info;
+@property(strong,nonatomic) AGSMapView *mapView;
+
 @end
 
 @implementation TdtMapViewController
-
-- (void)dealloc {
-    NSLog(@"xiaohui");
-}
 
 
 
@@ -31,15 +25,17 @@
 
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
+    self.mapView = [[AGSMapView alloc]initWithFrame:self.view.frame];
     
-    _mapView = [[AGSMapView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:self.mapView];
     
-    [self.view addSubview:_mapView];
-    
-    _mapView.layerDelegate = self;
-    _info = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
-//    [[SGTileLayerUtil sharedInstance] loadTdtTileLayer:WMTS_VECTOR_2000 andMapView:self.mapView];
-//    [self zoomToChineseEnvelopeCGCS2000];
+    self.mapView.layerDelegate = self;
+
+
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+
 
 }
 
@@ -51,7 +47,14 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
 
+
+//        AGSTiledMapServiceLayer * tileLayer = [[AGSTiledMapServiceLayer alloc]initWithURL:[[NSURL alloc]initWithString:@"http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer"]];
+//        [self.mapView addMapLayer:tileLayer];
+    
+        [[SGTileLayerUtil sharedInstance] loadTdtTileLayer:WMTS_VECTOR_2000 andMapView:self.mapView];
+
 }
+
 
 -(void) zoomToChineseEnvelopeCGCS2000{
     
@@ -60,23 +63,8 @@
 
 #pragma mark - 
 - (void)mapViewDidLoad:(AGSMapView *)mapView {
+    
     [self zoomToChineseEnvelopeCGCS2000];
 }
 
-#pragma mark - SGSWMTSInfoDelegate
-- (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
-    SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
-    if (layerInfo) {
-        SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
-        [_mapView addMapLayer:layer];
-        
-        [layer loadWMTSTileAndUsingCache:YES];
-    } else {
-        NSLog(@"tuceng wei kong");
-    }
-}
-
-- (void)sgsWMTSInfo:(SGSWMTSInfo *)wmtsInfo didFailToLoad:(NSError *)error {
-    NSLog(@"failure: %@", error);
-}
 @end

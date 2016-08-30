@@ -19,10 +19,13 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9831DE3C1D6BF2AF0035D8F0 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE3B1D6BF2AF0035D8F0 /* MainViewController.m */; };
 		9831DE3F1D6BF4EC0035D8F0 /* TdtMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE3E1D6BF4EC0035D8F0 /* TdtMapViewController.m */; };
 		9831DE811D6C30380035D8F0 /* BDMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9831DE801D6C30380035D8F0 /* BDMapViewController.m */; };
+		9861E6A21D752AF1004FD328 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9861E6A11D752AF1004FD328 /* Launch Screen.storyboard */; };
+		9861E6A51D756958004FD328 /* SGWMTSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861E6A41D756958004FD328 /* SGWMTSViewController.m */; };
+		9861E6A81D756B03004FD328 /* TileLayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861E6A71D756B03004FD328 /* TileLayerViewController.m */; };
+		9861E6AF1D75853C004FD328 /* KongbaiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9861E6AE1D75853C004FD328 /* KongbaiViewController.m */; };
 		DE33404BC050B7E187335FED /* Pods_SGTileLayer_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8AE6EE4556959DCBAFBBBB5 /* Pods_SGTileLayer_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +59,6 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9609E9742F929E45710FC601 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		9831DE3A1D6BF2AF0035D8F0 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		9831DE3B1D6BF2AF0035D8F0 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -64,6 +66,13 @@
 		9831DE3E1D6BF4EC0035D8F0 /* TdtMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TdtMapViewController.m; sourceTree = "<group>"; };
 		9831DE7F1D6C30380035D8F0 /* BDMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDMapViewController.h; sourceTree = "<group>"; };
 		9831DE801D6C30380035D8F0 /* BDMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDMapViewController.m; sourceTree = "<group>"; };
+		9861E6A11D752AF1004FD328 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		9861E6A31D756958004FD328 /* SGWMTSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGWMTSViewController.h; sourceTree = "<group>"; };
+		9861E6A41D756958004FD328 /* SGWMTSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGWMTSViewController.m; sourceTree = "<group>"; };
+		9861E6A61D756B03004FD328 /* TileLayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileLayerViewController.h; sourceTree = "<group>"; };
+		9861E6A71D756B03004FD328 /* TileLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileLayerViewController.m; sourceTree = "<group>"; };
+		9861E6AD1D75853C004FD328 /* KongbaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KongbaiViewController.h; sourceTree = "<group>"; };
+		9861E6AE1D75853C004FD328 /* KongbaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KongbaiViewController.m; sourceTree = "<group>"; };
 		A2700C65A873579B0E2C1A82 /* SGTileLayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGTileLayer.podspec; path = ../SGTileLayer.podspec; sourceTree = "<group>"; };
 		B95A473944C3D58602F0FDE9 /* Pods-SGTileLayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTileLayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D8AE6EE4556959DCBAFBBBB5 /* Pods_SGTileLayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTileLayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,9 +139,10 @@
 		6003F593195388D20070C39A /* Example for SGTileLayer */ = {
 			isa = PBXGroup;
 			children = (
+				9861E6A31D756958004FD328 /* SGWMTSViewController.h */,
+				9861E6A41D756958004FD328 /* SGWMTSViewController.m */,
 				6003F59C195388D20070C39A /* AppDelegate.h */,
 				6003F59D195388D20070C39A /* AppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 				9831DE3A1D6BF2AF0035D8F0 /* MainViewController.h */,
@@ -141,6 +151,10 @@
 				9831DE3E1D6BF4EC0035D8F0 /* TdtMapViewController.m */,
 				9831DE7F1D6C30380035D8F0 /* BDMapViewController.h */,
 				9831DE801D6C30380035D8F0 /* BDMapViewController.m */,
+				9861E6A61D756B03004FD328 /* TileLayerViewController.h */,
+				9861E6A71D756B03004FD328 /* TileLayerViewController.m */,
+				9861E6AD1D75853C004FD328 /* KongbaiViewController.h */,
+				9861E6AE1D75853C004FD328 /* KongbaiViewController.m */,
 			);
 			name = "Example for SGTileLayer";
 			path = SGTileLayer;
@@ -153,6 +167,7 @@
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
 				6003F59B195388D20070C39A /* SGTileLayer-Prefix.pch */,
+				9861E6A11D752AF1004FD328 /* Launch Screen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,7 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				9861E6A21D752AF1004FD328 /* Launch Screen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -344,8 +359,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9861E6A81D756B03004FD328 /* TileLayerViewController.m in Sources */,
 				6003F59E195388D20070C39A /* AppDelegate.m in Sources */,
+				9861E6A51D756958004FD328 /* SGWMTSViewController.m in Sources */,
 				9831DE3C1D6BF2AF0035D8F0 /* MainViewController.m in Sources */,
+				9861E6AF1D75853C004FD328 /* KongbaiViewController.m in Sources */,
 				9831DE3F1D6BF4EC0035D8F0 /* TdtMapViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				9831DE811D6C30380035D8F0 /* BDMapViewController.m in Sources */,
@@ -468,26 +486,13 @@
 			baseConfigurationReference = 4AE6C91DCF0DAC82E6C24F08 /* Pods-SGTileLayer_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					$HOME/Library/SDKs/ArcGIS/iOS,
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGTileLayer/SGTileLayer-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SGTileLayer/SGTileLayer-Info.plist";
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"SGTileLayer\"",
-					"-ObjC",
-					"-framework",
-					ArcGIS,
-					"-l",
-					"c++",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -500,26 +505,13 @@
 			baseConfigurationReference = B95A473944C3D58602F0FDE9 /* Pods-SGTileLayer_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					$HOME/Library/SDKs/ArcGIS/iOS,
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SGTileLayer/SGTileLayer-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "SGTileLayer/SGTileLayer-Info.plist";
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-framework",
-					"\"SGTileLayer\"",
-					"-ObjC",
-					"-framework",
-					ArcGIS,
-					"-l",
-					"c++",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

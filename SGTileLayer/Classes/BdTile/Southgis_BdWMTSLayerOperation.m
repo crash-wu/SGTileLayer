@@ -54,7 +54,7 @@
     @finally {
         //Invoke the layer's action method
 #pragma clang diagnostic ignored "-Warc-performSelector-leaks"
-        [_target performSelector:_action withObject:self];
+        [_target performSelectorOnMainThread:_action withObject:self waitUntilDone:YES];
     }
     
 }

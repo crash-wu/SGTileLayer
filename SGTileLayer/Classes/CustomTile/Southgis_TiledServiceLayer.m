@@ -43,7 +43,7 @@
     
     self.infoOperation.delegate = self;
     
-    [_requestQueue addOperation:self.infoOperation];
+    [self.requestQueue addOperation:self.infoOperation];
 }
 
 #pragma mark - LayerInfoOperationDelegate
@@ -51,9 +51,9 @@
     
     _layerInfo = layerInfo;
     
-    _tileInfo = layerInfo.tileInfo;
+    self.sgTileInfo = layerInfo.tileInfo;
     
-    _fullEnvelope = layerInfo.fullExtent;
+    self.sgFullEnvelope = layerInfo.fullExtent;
    
     [super layerDidLoad];
 }
@@ -74,7 +74,7 @@
             //切片请求
             Southigs_TiledServiceLayerOperation *operation = [[Southigs_TiledServiceLayerOperation alloc]initOperationKey:key layerInfo:_layerInfo target:weakSelf action:@selector(didFinishOperation:)];
             
-            [_requestQueue addOperation:operation];
+            [self.requestQueue addOperation:operation];
         }
         
     }];

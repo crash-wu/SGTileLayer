@@ -15,6 +15,7 @@
 #import "SGSWMTSLayer.h"
 #import "SGSWMTSLayerInfo.h"
 #import "Southgis_TiledServiceLayer.h"
+#import "DDTileServicelayer.h"
 
 #endif /* SGTileLayerHeader_h */
 
