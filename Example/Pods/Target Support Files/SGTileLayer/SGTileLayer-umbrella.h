@@ -16,7 +16,6 @@
 #import "SGTileLayerUtil.h"
 #import "SouthgisBaseTiledServiceLayer.h"
 #import "SouthgisTiledMapHelper.h"
-#import "DDTileServicelayer.h"
 #import "SouthgisTdtType.h"
 #import "SouthgisTdt_LayerInfo.h"
 #import "SouthgisTdt_TileLayer.h"

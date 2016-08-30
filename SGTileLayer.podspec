@@ -44,7 +44,8 @@ Pod::Spec.new do |s|
     'ENABLE_BITCODE' => 'NO',
 
     'CLANG_ENABLE_MODULES' => 'YES',
- 'MACH_O_TYPE' => 'staticlib'
+#'MACH_O_TYPE' => 'staticlib'mh_execute
+'MACH_O_TYPE' => 'mh_execute'
 
     }
 

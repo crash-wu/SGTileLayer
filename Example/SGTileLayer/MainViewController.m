@@ -11,7 +11,6 @@
 #import "BDMapViewController.h"
 #import "SGWMTSViewController.h"
 #import "TileLayerViewController.h"
-#import "DDTileServicelayer.h"
 #import "KongbaiViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>

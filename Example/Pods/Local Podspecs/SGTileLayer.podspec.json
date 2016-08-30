@@ -27,6 +27,6 @@
     "OTHER_LDFLAGS": "-ObjC -framework ArcGIS -l c++",
     "ENABLE_BITCODE": "NO",
     "CLANG_ENABLE_MODULES": "YES",
-    "MACH_O_TYPE": "staticlib"
+    "MACH_O_TYPE": "mh_execute"
   }
 }
