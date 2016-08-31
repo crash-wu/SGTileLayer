@@ -1,12 +1,18 @@
 # SGTileLayer
 
-[![CI Status](http://img.shields.io/travis/吴小星/SGTileLayer.svg?style=flat)](https://travis-ci.org/吴小星/SGTileLayer)
+[![CI Status](http://img.shields.io/travis/crash_wu/SGTileLayer.svg?style=flat)](https://travis-ci.org/crash-wu/SGTileLayer)
 [![Version](https://img.shields.io/cocoapods/v/SGTileLayer.svg?style=flat)](http://cocoapods.org/pods/SGTileLayer)
 [![License](https://img.shields.io/cocoapods/l/SGTileLayer.svg?style=flat)](http://cocoapods.org/pods/SGTileLayer)
 [![Platform](https://img.shields.io/cocoapods/p/SGTileLayer.svg?style=flat)](http://cocoapods.org/pods/SGTileLayer)
 
+
+
 ## Decribe
 提供天地图瓦片图层加载，百度地图瓦片图层加载，以及其他TileLayer类型图层加载等功能。在图层加载的时，提供缓存图层功能。 
+
+## Class
+
+![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_501B451D-EFE6-4673-BFF1-7E3223570854.png)
 
 ## Usage
 
@@ -134,7 +140,22 @@
             NSLog(@"tuceng wei kong");
         }
     }
+    
 ## Setting
+	由于SGTileLayer.framework已经指定 ArcGIS SDK  Frame search Patchs，以及
+    Others Links 编译选项，所以需要重新配置下：
+    1.选择项目工程文档；
+    2.选择Build Setting 菜单；
+    3.选择 Frame work search Patchs ,并且添加 '$(inherited)'
+    4.选择Others Links ，并且添加 ‘$(inherited)’
+    $(inherited)
+如图：
+
+![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_460B5749-015D-418F-BEB8-34F01623FC9C.png)
+
+![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_3D6C9B5E-618C-4F0E-A3D2-D1F046A0810D.png)
+    
+
     由于ArcgisSDK是静态库的原因,所有pod Install ,或者pod update 后，要更改SGTileLayer.framework编译属性.
     1.点击打开Pods项目
     2.选择SGTileLayer.framework 
@@ -143,7 +164,8 @@
     5.修改Mach-o 为Static Library
     6.每次pod install 或者pod update 后，都要更改上述的编译配置信息；
     如下图所示：
-    
+
+
 ![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_AAFAA780-2095-467B-B442-F5A3159C2777.png)
 
      
