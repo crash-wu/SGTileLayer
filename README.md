@@ -5,7 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/SGTileLayer.svg?style=flat)](http://cocoapods.org/pods/SGTileLayer)
 [![Platform](https://img.shields.io/cocoapods/p/SGTileLayer.svg?style=flat)](http://cocoapods.org/pods/SGTileLayer)
 
+## Author
 
+吴小星, crash_wu@163.com
 
 ## Decribe
 提供天地图瓦片图层加载，百度地图瓦片图层加载，以及其他TileLayer类型图层加载等功能。在图层加载的时，提供缓存图层功能。 
@@ -198,9 +200,7 @@ it, simply add the following line to your Podfile:
 pod "SGTileLayer"
 ```
 
-## Author
 
-吴小星, crash_wu@163.com
 
 ## License
 
