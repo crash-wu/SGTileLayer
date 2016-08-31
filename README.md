@@ -113,7 +113,15 @@
     *  @return SGSWMTSInfo or nil
     */
     - (instancetype)initWithURLString:(NSString *)url tileDPI:(NSUInteger)dpi delegate:(id<SGSWMTSInfoDelegate>)delegate;
-    例如：
+    - 
+例如：
+
+    -(void)viewDidAppear:(BOOL)animated{
+    	 [super viewDidAppear:animated];
+
+       SGSWMTSInfo  * _info = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
+    }
+    
     #pragma mark - SGSWMTSInfoDelegate
     - (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
         SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
@@ -136,14 +144,27 @@
     6.每次pod install 或者pod update 后，都要更改上述的编译配置信息；
     如下图所示：
     
-![()](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_AAFAA780-2095-467B-B442-F5A3159C2777.png)
+![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_AAFAA780-2095-467B-B442-F5A3159C2777.png)
+
      
 
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+加载天地图
+
+![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_Tdt.gif)
+
+加载百度地图
+![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_百度地图.gif)
+
+加载WMTS
+
+![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_SGWTMTS.gif)
+
 ## Requirements
+
     ArcGIS-Runtime-SDK-iOS for version 10.2.5
 
 ## Installation
@@ -157,7 +178,7 @@ pod "SGTileLayer"
 
 ## Author
 
-吴小星, xiaoxing.wu@southgis.com
+吴小星, crash_wu@163.com
 
 ## License
 
