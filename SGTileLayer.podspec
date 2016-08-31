@@ -36,16 +36,17 @@ Pod::Spec.new do |s|
 
     s.xcconfig = {
 
-    "FRAMEWORK_SEARCH_PATHS" => "$(inherited) $(HOME)/Library/SDKs/ArcGIS/iOS",
+    "FRAMEWORK_SEARCH_PATHS" => "$(HOME)/Library/SDKs/ArcGIS/iOS",
 
     "OTHER_LDFLAGS"  => '-ObjC -framework ArcGIS -l c++',
-
+#$(inherited)
 
     'ENABLE_BITCODE' => 'NO',
 
-    'CLANG_ENABLE_MODULES' => 'YES',
-#'MACH_O_TYPE' => 'staticlib'mh_execute
-'MACH_O_TYPE' => 'mh_execute'
+    'CLANG_ENABLE_MODULES' => 'YES'
+#'MACH_O_TYPE' => 'staticlib'
+#'MACH_O_TYPE' => 'mh_execute'
+#'MACH_O_TYPE' => 'mh_dylib'
 
     }
 

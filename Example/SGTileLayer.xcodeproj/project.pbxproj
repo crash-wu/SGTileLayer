@@ -73,6 +73,7 @@
 		9861E6A71D756B03004FD328 /* TileLayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileLayerViewController.m; sourceTree = "<group>"; };
 		9861E6AD1D75853C004FD328 /* KongbaiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KongbaiViewController.h; sourceTree = "<group>"; };
 		9861E6AE1D75853C004FD328 /* KongbaiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KongbaiViewController.m; sourceTree = "<group>"; };
+		9861E6B01D7664D0004FD328 /* SGTileLayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SGTileLayer.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphonesimulator/SGTileLayer/SGTileLayer.framework"; sourceTree = "<group>"; };
 		A2700C65A873579B0E2C1A82 /* SGTileLayer.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SGTileLayer.podspec; path = ../SGTileLayer.podspec; sourceTree = "<group>"; };
 		B95A473944C3D58602F0FDE9 /* Pods-SGTileLayer_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SGTileLayer_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SGTileLayer_Example/Pods-SGTileLayer_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D8AE6EE4556959DCBAFBBBB5 /* Pods_SGTileLayer_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SGTileLayer_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +128,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9861E6B01D7664D0004FD328 /* SGTileLayer.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
