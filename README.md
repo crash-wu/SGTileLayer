@@ -135,25 +135,25 @@
 
 **例如：**
 
-    ```
-    -(void)viewDidAppear:(BOOL)animated{
-    	 [super viewDidAppear:animated];
+```
+-(void)viewDidAppear:(BOOL)animated{
+     [super viewDidAppear:animated];
 
-       SGSWMTSInfo  * _info = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
-    }
-    
-    #pragma mark - SGSWMTSInfoDelegate
-    - (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
-        SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
-        if (layerInfo) {
-            SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
-            [_mapView addMapLayer:layer];
+   SGSWMTSInfo  * _info = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
+}
 
-            [layer loadWMTSTileAndUsingCache:YES];
-        } else {
-            NSLog(@"tuceng wei kong");
-        }
+#pragma mark - SGSWMTSInfoDelegate
+- (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
+    SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
+    if (layerInfo) {
+        SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
+        [_mapView addMapLayer:layer];
+
+        [layer loadWMTSTileAndUsingCache:YES];
+    } else {
+        NSLog(@"tuceng wei kong");
     }
+}
 ```
 
 ## Setting
@@ -163,7 +163,7 @@
     1.选择项目工程文档；
     2.选择Build Setting 菜单；
     3.选择 Frame work search Patchs ,并且添加 '$(inherited)'
-    4.选择Others Links ，并且添加 ‘$(inherited)’
+    4.选择Others Links ，并且添加 ‘$(inherited)’*
     
 **如图：**
 
@@ -213,11 +213,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 SGTileLayer is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-```ruby
+```
 pod "SGTileLayer"
 ```
-
-
 
 ## License
 
