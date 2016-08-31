@@ -82,7 +82,17 @@
     *  @return 天地图当前图层级别
     */
     -(NSInteger)currentLevel:(nonnull SouthgisTdt_TileLayer *)tdtLayer;
-    
+
+**例如：**
+
+```
+加载天地图
+[[SGTileLayerUtil sharedInstance] loadTdtTileLayer:WMTS_VECTOR_2000 andMapView:self.mapView];
+
+加载百度地图
+[[SGTileLayerUtil sharedInstance] loadBdTileLayer:self.mapView];
+```
+
 ### 加载其他 TileLayer图层服务
 #### Southgis_TiledServiceLayer
     /**
@@ -121,9 +131,11 @@
     *  @return SGSWMTSInfo or nil
     */
     - (instancetype)initWithURLString:(NSString *)url tileDPI:(NSUInteger)dpi delegate:(id<SGSWMTSInfoDelegate>)delegate;
-    - 
-例如：
 
+
+**例如：**
+
+    ```
     -(void)viewDidAppear:(BOOL)animated{
     	 [super viewDidAppear:animated];
 
@@ -142,30 +154,35 @@
             NSLog(@"tuceng wei kong");
         }
     }
-    
+```
+
 ## Setting
-	由于SGTileLayer.framework已经指定 ArcGIS SDK  Frame search Patchs，以及
-    Others Links 编译选项，所以需要重新配置下：
+
+**设置Framework search Patchs  以及 Other Links**
+*	
     1.选择项目工程文档；
     2.选择Build Setting 菜单；
     3.选择 Frame work search Patchs ,并且添加 '$(inherited)'
     4.选择Others Links ，并且添加 ‘$(inherited)’
-    $(inherited)
-如图：
+    
+**如图：**
 
 ![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_460B5749-015D-418F-BEB8-34F01623FC9C.png)
 
 ![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_3D6C9B5E-618C-4F0E-A3D2-D1F046A0810D.png)
     
 
-    由于ArcgisSDK是静态库的原因,所有pod Install ,或者pod update 后，要更改SGTileLayer.framework编译属性.
+**修改 SGTileLayer.framework编译属性**
+
+*    由于ArcgisSDK是静态库的原因,所有pod Install ,或者pod update 后，要更改SGTileLayer.framework编译属性.
     1.点击打开Pods项目
     2.选择SGTileLayer.framework 
     3.选择Build Settings菜单栏;
     4.搜索Mach-o 编译库选项；
     5.修改Mach-o 为Static Library
     6.每次pod install 或者pod update 后，都要更改上述的编译配置信息；
-    如下图所示：
+    
+**如下图所示：**
 
 
 ![](http://images.cnblogs.com/cnblogs_com/crash-wu/875488/o_AAFAA780-2095-467B-B442-F5A3159C2777.png)
