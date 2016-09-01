@@ -8,7 +8,7 @@
 
 #import "SGWMTSViewController.h"
 
-@interface SGWMTSViewController ()<AGSMapViewLayerDelegate, SGSWMTSInfoDelegate>
+@interface SGWMTSViewController ()<AGSMapViewLayerDelegate, SGSWMTSInfoDelegate,AGSLayerDelegate>
 
 @property(strong,nonatomic) AGSMapView *mapView;
 @property (strong) SGSWMTSInfo *info;
@@ -41,12 +41,12 @@
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
     
-    _info = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
+//    _info = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
+//    
+//    _cav = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/cva_c/wmts" delegate:self];
     
-    _cav = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/cva_c/wmts" delegate:self];
-    
-
-    
+    //加载天地图国标2000图层
+    [[SGTileLayerUtil sharedInstance]loadTdtCGCS2000:self.mapView];
 }
 
 
@@ -58,7 +58,15 @@
 #pragma mark -
 - (void)mapViewDidLoad:(AGSMapView *)mapView {
     
-    //[self zoomToChineseEnvelopeCGCS2000];
+    static BOOL flag = YES;
+    if(flag){
+        flag = NO;
+
+        AGSDynamicMapServiceLayer * dynamic = [[AGSDynamicMapServiceLayer alloc] initWithURL:[[NSURL alloc]initWithString:@"http://222.247.40.206:6080/arcgis/rest/services/WorkMap/gh_gongnengqufenbu_luyou/MapServer"]];
+        dynamic.delegate = self;
+        [self.mapView addMapLayer:dynamic];
+    }
+
 }
 
 #pragma mark - SGSWMTSInfoDelegate
@@ -68,9 +76,14 @@
     SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
     if (layerInfo) {
         SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
-        [self.mapView addMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL]];
         
-        
+        if([layer.layerName isEqualToString:@"vec"]){
+            
+            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:0];
+        }else{
+            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:1];
+        }
+
         [layer loadWMTSTileAndUsingCache:true];
     } else {
         NSLog(@"tuceng wei kong");
@@ -79,6 +92,17 @@
 
 - (void)sgsWMTSInfo:(SGSWMTSInfo *)wmtsInfo didFailToLoad:(NSError *)error {
     NSLog(@"failure: %@", error);
+}
+
+-(void)layerDidLoad:(AGSLayer *)layer{
+    
+    NSLog(@"fullEnvelope:%@",layer.fullEnvelope);
+
+//    [self.mapView zoomToEnvelope:layer.fullEnvelope animated:true];
+//    [self.mapView zoomToScale:layer.minScale animated:true];
+//    AGSEnvelope *envelope = self.mapView.visibleAreaEnvelope;
+//    NSLog(@"envelopen:%@",envelope);
+
 }
 
 

@@ -29,6 +29,49 @@
 }
 
 /**
+ *  @author crash         crash_wu@163.com   , 16-09-01 17:09:01
+ *
+ *  @brief  加载天地图底图(CGCS2000 坐标系)
+ *
+ *  @param mapView 地图
+ */
+-(void)loadTdtCGCS2000:(nonnull AGSMapView *)mapView{
+    
+    self.mapView = mapView;
+    
+    self.cev = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
+    
+    self.cav = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/cva_c/wmts" delegate:self];
+}
+
+
+#pragma mark - SGSWMTSInfoDelegate
+- (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
+    
+    
+    SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
+    if (layerInfo) {
+        SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
+        
+        if([layer.layerName isEqualToString:@"vec"]){
+            
+            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:0];
+        }else {
+            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:1];
+        }
+        
+        [layer loadWMTSTileAndUsingCache:true];
+    } else {
+        NSLog(@"tuceng wei kong");
+    }
+}
+
+- (void)sgsWMTSInfo:(SGSWMTSInfo *)wmtsInfo didFailToLoad:(NSError *)error {
+    NSLog(@"failure: %@", error);
+}
+
+
+/**
  *  @author crash         crash_wu@163.com   , 16-08-23 10:08:49
  *
  *  @brief  加载天地图

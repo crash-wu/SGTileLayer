@@ -180,7 +180,7 @@ static NSString *kRESTfulURLStringFormat = @"%@%@/%@/%@/%ld/%ld/.%@";
                              self.tileURLString,
                              self.styleIdentifier,
                              self.tileMatrixSet,
-                             self.tileMatrixIds[key.level],
+                             self.tileMatrixIds[key.level+1],
                              key.row,
                              key.column,
                              self.tileInfo.format];

@@ -135,6 +135,7 @@
                           [[AGSLOD alloc] initWithLevel:16 resolution:0.000010728836059570307 scale: 4513.997733376551],
                           [[AGSLOD alloc] initWithLevel:17 resolution:0.000005364418029785169 scale: 2256.998866688275],[[AGSLOD alloc]initWithLevel:18 resolution:2.682209014892579E-6 scale:1127.2338602399827],[[AGSLOD alloc]initWithLevel:19 resolution:1.3411045074462895E-6 scale:563.6169301199914],
                           nil ];
+
     }
     
     
