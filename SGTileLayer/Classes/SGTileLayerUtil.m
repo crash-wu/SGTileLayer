@@ -53,12 +53,14 @@
     if (layerInfo) {
         SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
         
-        if([layer.layerName isEqualToString:@"vec"]){
-            
-            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:0];
-        }else {
-            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:1];
-        }
+//        if([layer.layerName isEqualToString:@"vec"]){
+//            
+//            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:0];
+//        }else {
+//            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:1];
+//        }
+        
+        [self.mapView addMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL]];
         
         [layer loadWMTSTileAndUsingCache:true];
     } else {

@@ -12,4 +12,9 @@
 
 @interface SGWMTSViewController : UIViewController
 
+@property(nonatomic,strong,nullable) UIButton *wmtsBtn;
+@property(nonatomic,strong,nullable) UIButton *getScale;
+@property(nonatomic,strong,nullable) UIButton *zoonOut;
+@property(nonatomic,strong,nullable) UIButton *zoomIn;
+
 @end

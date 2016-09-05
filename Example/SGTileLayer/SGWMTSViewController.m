@@ -13,6 +13,8 @@
 @property(strong,nonatomic) AGSMapView *mapView;
 @property (strong) SGSWMTSInfo *info;
 @property(strong) SGSWMTSInfo *cav;
+@property(strong) AGSDynamicMapServiceLayer * dynamic;
+@property(strong)SGSWMTSInfo *cev;
 
 @end
 
@@ -28,11 +30,53 @@
     
     [self.view addSubview:self.mapView];
     
+    self.wmtsBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.wmtsBtn.frame = CGRectMake(0, 0, 60, 30);
+    [self.wmtsBtn setTitle:@"wmts" forState:UIControlStateNormal];
+    [self.wmtsBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.wmtsBtn.backgroundColor = [UIColor blueColor];
+    [self.wmtsBtn addTarget:self action:@selector(wmtLoad:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.wmtsBtn];
+    
+    self.getScale = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.getScale.frame = CGRectMake(60, 0, 60, 30);
+    [self.getScale setTitle:@"scale" forState:UIControlStateNormal];
+    [self.getScale setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.getScale.backgroundColor = [UIColor blueColor];
+    [self.getScale addTarget:self action:@selector(getScaleTouch:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.getScale];
+    
+    self.zoomIn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.zoomIn.frame = CGRectMake(120, 0, 60, 30);
+    [self.zoomIn setTitle:@"+" forState:UIControlStateNormal];
+    [self.zoomIn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.zoomIn.backgroundColor = [UIColor blueColor];
+    [self.zoomIn addTarget:self action:@selector(zooIn:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.zoomIn];
+    
+    self.zoonOut = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.zoonOut.frame = CGRectMake(180, 0, 60, 30);
+    [self.zoonOut setTitle:@"-" forState:UIControlStateNormal];
+    [self.zoonOut setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.zoonOut.backgroundColor = [UIColor blueColor];
+    [self.zoonOut addTarget:self action:@selector(zoomOut:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.zoonOut];
+    
+    
+    
     self.mapView.layerDelegate = self;
     
     
 }
 
+-(void)zooIn:(UIButton *)button{
+    
+    [self.mapView zoomIn:true];
+}
+
+-(void) zoomOut:(UIButton *)button{
+    [self.mapView zoomOut:true];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -42,13 +86,34 @@
     [super viewDidAppear:animated];
     
 //    _info = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
-//    
+//
 //    _cav = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/cva_c/wmts" delegate:self];
     
     //加载天地图国标2000图层
     [[SGTileLayerUtil sharedInstance]loadTdtCGCS2000:self.mapView];
 }
 
+-(void)getScaleTouch:(UIButton *)button{
+    
+    AGSEnvelope *envelope = self.mapView.visibleAreaEnvelope;
+    NSLog(@"mapEnvelope:%@",envelope);
+    
+    self.cev = [[SGTileLayerUtil sharedInstance] cev];
+    NSLog(@"cev:%@",self.cev);
+    
+    NSLog(@"mapScal:%lf",self.mapView.mapScale);
+
+}
+
+-(void)wmtLoad:(UIButton *)button{
+    
+    [self.mapView removeMapLayerWithName:@"wmts"];
+    
+    self.dynamic = [[AGSDynamicMapServiceLayer alloc]initWithURL:[[NSURL alloc]initWithString:@"http://222.247.40.206:6080/arcgis/rest/services/WorkMap/gh_jingzhunfupin_minzheng/MapServer"]];
+    self.dynamic.delegate = self;
+    [self.mapView addMapLayer:self.dynamic withName:@"wmts"];
+
+}
 
 -(void) zoomToChineseEnvelopeCGCS2000{
     
@@ -58,14 +123,7 @@
 #pragma mark -
 - (void)mapViewDidLoad:(AGSMapView *)mapView {
     
-    static BOOL flag = YES;
-    if(flag){
-        flag = NO;
 
-        AGSDynamicMapServiceLayer * dynamic = [[AGSDynamicMapServiceLayer alloc] initWithURL:[[NSURL alloc]initWithString:@"http://222.247.40.206:6080/arcgis/rest/services/WorkMap/gh_gongnengqufenbu_luyou/MapServer"]];
-        dynamic.delegate = self;
-        [self.mapView addMapLayer:dynamic];
-    }
 
 }
 
@@ -76,13 +134,8 @@
     SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
     if (layerInfo) {
         SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
-        
-        if([layer.layerName isEqualToString:@"vec"]){
-            
-            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:0];
-        }else{
-            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:1];
-        }
+
+        [self.mapView addMapLayer:layer];
 
         [layer loadWMTSTileAndUsingCache:true];
     } else {
@@ -97,12 +150,11 @@
 -(void)layerDidLoad:(AGSLayer *)layer{
     
     NSLog(@"fullEnvelope:%@",layer.fullEnvelope);
+    [self.mapView zoomToEnvelope:layer.fullEnvelope animated:true];
+    [self.mapView zoomToScale:layer.minScale animated:true];
 
-//    [self.mapView zoomToEnvelope:layer.fullEnvelope animated:true];
-//    [self.mapView zoomToScale:layer.minScale animated:true];
-//    AGSEnvelope *envelope = self.mapView.visibleAreaEnvelope;
-//    NSLog(@"envelopen:%@",envelope);
-
+    NSLog(@"initalEnvelope:%@",layer.initialEnvelope);
+    NSLog(@"minScale:%lf",layer.minScale);
 }
 
 
