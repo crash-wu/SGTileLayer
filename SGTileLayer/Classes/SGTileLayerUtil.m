@@ -31,19 +31,67 @@
 /**
  *  @author crash         crash_wu@163.com   , 16-09-01 17:09:01
  *
- *  @brief  加载天地图底图(CGCS2000 坐标系)
+ *  @brief  加载天地图适量底图(CGCS2000 坐标系)
  *
  *  @param mapView 地图
  */
 -(void)loadTdtCGCS2000:(nonnull AGSMapView *)mapView{
     
+
     self.mapView = mapView;
-    
+    [self clearCGCS2000:mapView];
     self.cev = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/vec_c/wmts" delegate:self];
     
     self.cav = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/cva_c/wmts" delegate:self];
 }
 
+/**
+ *  @author crash         crash_wu@163.com   , 16-09-05 15:09:14
+ *
+ *  @brief  加载天地图影像底图
+ *
+ *  @param mapView 当前地图
+ */
+-(void) loadTdtImageCGCS2000:(nonnull AGSMapView *) mapView{
+    self.mapView = mapView;
+    [self clearCGCS2000:mapView];
+    
+    self.cev = [[SGSWMTSInfo alloc]initWithURLString:@"http://t0.tianditu.com/img_c/wmts" delegate:self];
+    self.cav = [[SGSWMTSInfo alloc] initWithURLString:@"http://t0.tianditu.com/cva_c/wmts" delegate:self];
+}
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-09-05 15:09:05
+ *
+ *  @brief  清除天地图CGCS2000图层
+ *
+ *  @param mapView 当前地图
+ */
+-(void)clearCGCS2000:(nonnull AGSMapView *)mapView{
+    
+    //清除地图
+    if(self.cev != nil){
+        
+        SGSWMTSLayerInfo *layerInfo = self.cev.layerInfos.firstObject;
+        if(layerInfo != nil){
+            
+            [self.mapView removeMapLayerWithName:[NSString stringWithFormat:@"%@",layerInfo.tileURL]];
+        }
+        
+    }
+    
+    //清除标识
+    
+    if(self.cav != nil){
+        
+        SGSWMTSLayerInfo *cavlayerInfo = self.cav.layerInfos.firstObject;
+        if(cavlayerInfo != nil){
+            
+            [self.mapView removeMapLayerWithName:[NSString stringWithFormat:@"%@",cavlayerInfo.tileURL]];
+        }
+    }
+    
+}
 
 #pragma mark - SGSWMTSInfoDelegate
 - (void)sgsWMTSInfoDidLoad:(SGSWMTSInfo *)wmtsInfo {
@@ -52,13 +100,6 @@
     SGSWMTSLayerInfo *layerInfo = wmtsInfo.layerInfos.firstObject;
     if (layerInfo) {
         SGSWMTSLayer *layer = [wmtsInfo wmtsLayerWithLayerInfo:layerInfo];
-        
-//        if([layer.layerName isEqualToString:@"vec"]){
-//            
-//            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:0];
-//        }else {
-//            [self.mapView insertMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL] atIndex:1];
-//        }
         
         [self.mapView addMapLayer:layer withName:[NSString stringWithFormat:@"%@",layerInfo.tileURL]];
         

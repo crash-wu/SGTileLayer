@@ -16,6 +16,8 @@
 @property(strong) AGSDynamicMapServiceLayer * dynamic;
 @property(strong)SGSWMTSInfo *cev;
 
+@property(assign) BOOL vecFlage ;
+
 @end
 
 @implementation SGWMTSViewController
@@ -62,11 +64,30 @@
     [self.zoonOut addTarget:self action:@selector(zoomOut:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.zoonOut];
     
+    self.layerChangBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.layerChangBtn.frame = CGRectMake(240, 0, 60, 30);
+    [self.layerChangBtn setTitle:@"切换" forState:UIControlStateNormal];
+    [self.layerChangBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    self.layerChangBtn.backgroundColor = [UIColor blueColor];
+    [self.layerChangBtn addTarget:self action:@selector(changeLayer:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.layerChangBtn];
     
-    
+    self.vecFlage = NO;
     self.mapView.layerDelegate = self;
     
     
+}
+
+-(void)changeLayer:(UIButton *)button{
+    
+    if(!self.vecFlage ){
+        
+        [[SGTileLayerUtil sharedInstance] loadTdtImageCGCS2000:self.mapView];
+    }else{
+        [[SGTileLayerUtil sharedInstance]loadTdtCGCS2000:self.mapView];
+    }
+
+    self.vecFlage = !self.vecFlage;
 }
 
 -(void)zooIn:(UIButton *)button{

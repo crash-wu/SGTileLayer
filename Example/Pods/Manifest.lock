@@ -1,5 +1,5 @@
 PODS:
-  - SGTileLayer (0.0.2)
+  - SGTileLayer (0.0.3)
 
 DEPENDENCIES:
   - SGTileLayer (from `../SGTileLayer.podspec`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../SGTileLayer.podspec
 
 SPEC CHECKSUMS:
-  SGTileLayer: a09fe120b480592dea37e24c15096828147f22f6
+  SGTileLayer: 67a060a5aecc903547800041e568f249cad90064
 
 PODFILE CHECKSUM: a308b0f7e70575dfe58651b18dd260367d715950
 

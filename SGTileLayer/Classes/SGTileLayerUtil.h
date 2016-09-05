@@ -75,6 +75,26 @@
  */
 -(void)loadTdtCGCS2000:(nonnull AGSMapView *)mapView;
 
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-09-05 15:09:14
+ *
+ *  @brief  加载天地图影像底图
+ *
+ *  @param mapView 当前地图
+ */
+-(void) loadTdtImageCGCS2000:(nonnull AGSMapView *) mapView;
+
+
+/**
+ *  @author crash         crash_wu@163.com   , 16-09-05 15:09:05
+ *
+ *  @brief  清除天地图CGCS2000图层
+ *
+ *  @param mapView 当前地图
+ */
+-(void)clearCGCS2000:(nonnull AGSMapView *)mapView;
+
 /**
  *  @author crash         crash_wu@163.com   , 16-08-23 10:08:54
  *
