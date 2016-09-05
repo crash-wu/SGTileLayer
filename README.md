@@ -82,12 +82,24 @@
     *  @return 天地图当前图层级别
     */
     -(NSInteger)currentLevel:(nonnull SouthgisTdt_TileLayer *)tdtLayer;
+    
+     /**
+     *  @author crash         crash_wu@163.com   , 16-09-01 17:09:01
+     *
+     *  @brief  加载天地图底图(CGCS2000 坐标系)
+     *
+     *  @param mapView 地图
+     */
+    -(void)loadTdtCGCS2000:(nonnull AGSMapView *)mapView;
 
 **例如：**
 
 ```
 加载天地图
 [[SGTileLayerUtil sharedInstance] loadTdtTileLayer:WMTS_VECTOR_2000 andMapView:self.mapView];
+
+//加载天地图国标2000图层
+[[SGTileLayerUtil sharedInstance]loadTdtCGCS2000:self.mapView];
 
 加载百度地图
 [[SGTileLayerUtil sharedInstance] loadBdTileLayer:self.mapView];
