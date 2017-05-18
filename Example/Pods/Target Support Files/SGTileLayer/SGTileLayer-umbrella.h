@@ -1,4 +1,14 @@
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#else
+#ifndef FOUNDATION_EXPORT
+#if defined(__cplusplus)
+#define FOUNDATION_EXPORT extern "C"
+#else
+#define FOUNDATION_EXPORT extern
+#endif
+#endif
+#endif
 
 #import "SouthgisBdWMTSLayer.h"
 #import "Southgis_BdWMTSLayerInfoDelegate.h"
@@ -8,6 +18,9 @@
 #import "Southgis_TiledServiceLayerInfoOperation+OfflineTiledInfo.h"
 #import "Southgis_TiledServiceLayerInfoOperation.h"
 #import "Southigs_TiledServiceLayerOperation.h"
+#import "SGGDLayer.h"
+#import "SGGDLayerInfoDelegate.h"
+#import "SGGDLayerOperation.h"
 #import "NSDictionary+YYAdd.h"
 #import "SGSWMTSInfo.h"
 #import "SGSWMTSLayer.h"

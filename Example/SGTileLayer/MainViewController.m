@@ -54,7 +54,7 @@
     }else if(indexPath.row ==3){
         cell.textLabel.text = @"TileLayer";
     }else{
-        cell.textLabel.text = @"空白页";
+        cell.textLabel.text = @"高德地图";
     }
     return cell;
 }

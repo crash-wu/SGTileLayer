@@ -271,4 +271,20 @@
     [mapView zoomToEnvelope:[[AGSEnvelope alloc] initWithXmin:80.76016586869 ymin:8.37639403682149 xmax:145.522396132932 ymax:52.9004273434877 spatialReference:mapView.spatialReference] animated:true];
 }
 
+#pragma mark -加载高德瓦片
+/**
+ 加载高德地图
+ 
+ @param mapView
+ */
+-(void)loadGDLayer:(nonnull AGSMapView *) mapView{
+    NSError *error;
+    self.mapView = mapView;
+    SGGDLayer *layer = [[SGGDLayer alloc]initWithLayerType:&error];
+    if (layer != nil) {
+        [self.mapView addMapLayer:layer withName:@"gaodeLayer"];
+    }
+    
+}
+
 @end

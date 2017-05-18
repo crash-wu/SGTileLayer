@@ -12,6 +12,8 @@
 #import "SouthgisTdt_TileLayer.h"
 #import "SouthgisBdWMTSLayer.h"
 #import "SGSWMTSInfo.h"
+#import "SGGDLayer.h"
+
 
 @interface SGTileLayerUtil : NSObject<SGSWMTSInfoDelegate>
 
@@ -144,6 +146,16 @@
  *  @param mapView 地图
  */
 -(void) zoomToChineseEnvelopeCGCS2000:(nonnull AGSMapView *)mapView;
+
+
+/**
+ 加载高德地图
+ 
+ @param mapView
+ */
+-(void)loadGDLayer:(nonnull AGSMapView *) mapView;
+
+
 
 
 @end

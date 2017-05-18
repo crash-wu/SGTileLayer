@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ArcGIS/ArcGIS.h>
+#import <SGTileLayer/SGTileLayerHeader.h>
 
 @interface KongbaiViewController : UIViewController
+
+@property(nullable ,strong,nonatomic) AGSMapView *mapView;
 
 @end

@@ -16,7 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor redColor];
+    self.mapView = [[AGSMapView alloc]initWithFrame:self.view.frame];
+    [self.view addSubview:self.mapView];
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.automaticallyAdjustsScrollViewInsets = false;
+    
+    [[SGTileLayerUtil sharedInstance] loadGDLayer:self.mapView];
 }
 
 - (void)didReceiveMemoryWarning {

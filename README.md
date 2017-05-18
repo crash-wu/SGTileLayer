@@ -10,7 +10,7 @@
 吴小星, crash_wu@163.com
 
 ## Decribe
-提供天地图瓦片图层加载，百度地图瓦片图层加载，以及其他TileLayer类型图层加载等功能。在图层加载的时，提供缓存图层功能。 
+提供天地图瓦片图层加载，百度地图瓦片图层加载,高德瓦片，以及其他TileLayer类型图层加载等功能。在图层加载的时，提供缓存图层功能。 
 
 ## Class
 
@@ -122,6 +122,9 @@
 
 加载百度地图
 [[SGTileLayerUtil sharedInstance] loadBdTileLayer:self.mapView];
+
+//加载高德瓦片
+[[SGTileLayerUtil sharedInstance] loadGDLayer:self.indoorMapView.mapView];
 ```
 
 ### 加载其他 TileLayer图层服务
