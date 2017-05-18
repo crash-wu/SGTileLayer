@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SGTileLayer'
-  s.version          = '0.0.3'
+  s.version          = '0.0.4'
   s.summary          = '天地图瓦片图层加载，百度地图瓦片图层加载等相关功能.'
 
 # This description is used to generate tags and improve search results.
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = '提供天地图瓦片图层加载，百度地图瓦片图层加载，以及其他TileLayer类型图层加载等功能。在图层加载的时，提供缓存图层功能'
+  s.description      = '提供天地图瓦片图层加载，百度地图瓦片图层加载，高德瓦片加载，以及其他TileLayer类型图层加载等功能。在图层加载的时，提供缓存图层功能'
 
 
   s.homepage         = 'https://github.com/crash-wu/SGTileLayer'
